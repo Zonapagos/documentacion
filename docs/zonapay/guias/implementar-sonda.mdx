@@ -11,7 +11,7 @@ La **sonda** (SONDA, cron job, tarea programada) es un proceso en **tu backend**
 **La sonda es obligatoria para la certificación PSE.** Sin ella, PSE no certifica tu comercio y no puedes operar PSE en producción.
 </Warning>
 
-## Por qué es necesaria
+## ¿Por qué es necesaria?
 
 PSE y ciertos flujos de tarjeta de crédito no responden de forma síncrona. Un pago puede quedar en estado `999` (pendiente por finalizar) o `4001` (pendiente CR) por varios minutos o incluso horas. Si tu backend no tiene un proceso que consulte periódicamente, **queda desincronizado** con ZonaPagos.
 
