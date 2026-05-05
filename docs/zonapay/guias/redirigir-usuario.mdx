@@ -1,6 +1,6 @@
 ---
 title: "Redirigir al usuario"
-description: "Cómo enviar al usuario al ciclo de pago de ZonaPagos."
+description: "Cómo enviar al usuario al ciclo de pago de Zonapagos."
 ---
 
 Tras `/InicioPago`, recibes `str_url`. Aquí explicamos las mejores prácticas para redirigir al usuario.
@@ -79,7 +79,7 @@ Algunos frameworks no permiten redirect directo. Fallback:
 
 ## Lo que ve el usuario
 
-El usuario llega al formulario de ZonaPagos donde:
+El usuario llega al formulario de Zonapagos donde:
 
 1. **Elige el medio de pago** entre los que tienes habilitados (PSE, TC, botón Bancolombia, etc.).
 2. **Completa los datos** específicos del medio.
@@ -104,7 +104,7 @@ El usuario puede demorar 1-10 minutos en el ciclo de pago. Tu UI debe:
 | Formulario dummie | `https://www.zonapagos.com/dummie_ciclopago/FormulariosWeb/InicioPago_Dummie.aspx` |
 
 <Tip>
-**Ideal para soporte**: al persistir `str_url` en tu BD, puedes reenviar el link al usuario si te escribe diciendo "no pude pagar". Funciona mientras la sesión no haya expirado en ZonaPagos (típicamente 30 minutos).
+**Ideal para soporte**: al persistir `str_url` en tu BD, puedes reenviar el link al usuario si te escribe diciendo "no pude pagar". Funciona mientras la sesión no haya expirado en Zonapagos (típicamente 30 minutos).
 </Tip>
 
 ## Consideraciones UX
@@ -118,11 +118,11 @@ El usuario puede demorar 1-10 minutos en el ciclo de pago. Tu UI debe:
 </Check>
 
 <Check>
-**Branding coherente**: el formulario de ZonaPagos puede personalizarse con el logo y colores de tu comercio. Coordina con tu gerente comercial.
+**Branding coherente**: el formulario de Zonapagos puede personalizarse con el logo y colores de tu comercio. Coordina con tu gerente comercial.
 </Check>
 
 ## Próximo paso
 
 <Card title="Recibir el callback →" icon="arrow-right" href="/docs/zonapay/guias/recibir-callback">
-  Qué hacer cuando ZonaPagos devuelve al usuario a tu comercio.
+  Qué hacer cuando Zonapagos devuelve al usuario a tu comercio.
 </Card>
