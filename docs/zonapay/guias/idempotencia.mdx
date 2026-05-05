@@ -54,7 +54,7 @@ async function iniciarPagoSeguro(datosRequest) {
       str_id_pago: datosRequest.InformacionPago.str_id_pago
     });
     
-    // Esperar 5s a que el backend de ZonaPagos termine de escribir (si es que lo hizo)
+    // Esperar 5s a que el backend de Zonapagos termine de escribir (si es que lo hizo)
     await new Promise(r => setTimeout(r, 5000));
     
     const verif = await verificarPago(datosRequest.InformacionPago.str_id_pago);
@@ -80,7 +80,7 @@ async function iniciarPagoSeguro(datosRequest) {
 
 ## Callback idempotente
 
-El usuario puede recargar tu página de retorno, o ZonaPagos puede disparar el callback dos veces.
+El usuario puede recargar tu página de retorno, o Zonapagos puede disparar el callback dos veces.
 
 ```javascript
 app.get("/pago/retorno", async (req, res) => {
