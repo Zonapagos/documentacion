@@ -145,38 +145,39 @@
       ]
     },
     {
-      "group": "Link de cobro",
+  "group": "Link de cobro",
+  "pages": [
+    "link-de-cobro/index",
+    "link-de-cobro/empezar",
+    {
+      "group": "Guías de integración",
       "pages": [
-        "link-de-cobro/index",
-        "link-de-cobro/empezar",
         {
-          "group": "Guías de integración",
+          "group": "Integración manual",
           "pages": [
-            {
-              "group": "Integración manual",
-              "pages": [
-                "link-de-cobro/integracion-manual/index",
-                "link-de-cobro/integracion-manual/configuracion",
-                "link-de-cobro/integracion-manual/base-de-datos",
-                "link-de-cobro/integracion-manual/creacion-link"
-              ]
-            },
-            {
-              "group": "API REST",
-              "pages": [
-                "link-de-cobro/api-rest/index",
-                "link-de-cobro/api-rest/creacion-link",
-                "link-de-cobro/api-rest/request",
-                "link-de-cobro/api-rest/response",
-                "link-de-cobro/api-rest/notificacion"
-              ]
-            },
-            {
-             "group": "Soporte",
-              "pages": [
-                "link-de-cobro/soporte/preguntas-frecuentes",
-                "link-de-cobro/soporte/errores-comunes",
+            "link-de-cobro/integracion-manual/index",
+            "link-de-cobro/integracion-manual/configuracion",
+            "link-de-cobro/integracion-manual/base-de-datos",
+            "link-de-cobro/integracion-manual/creacion-link"
           ]
+        },
+        {
+          "group": "API REST",
+          "pages": [
+            "link-de-cobro/api-rest/index",
+            "link-de-cobro/api-rest/creacion-link",
+            "link-de-cobro/api-rest/request",
+            "link-de-cobro/api-rest/response",
+            "link-de-cobro/api-rest/notificacion"
+          ]
+        }
+      ]
+    },
+    {
+      "group": "Soporte",
+      "pages": [
+        "link-de-cobro/soporte"
+      ]
     }
   ]
 }
