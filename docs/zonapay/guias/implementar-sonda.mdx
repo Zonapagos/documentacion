@@ -13,7 +13,7 @@ La **sonda** (SONDA, cron job, tarea programada) es un proceso en **tu backend**
 
 ## ¿Por qué es necesaria?
 
-PSE y ciertos flujos de tarjeta de crédito no responden de forma síncrona. Un pago puede quedar en estado `999` (pendiente por finalizar) o `4001` (pendiente CR) por varios minutos o incluso horas. Si tu backend no tiene un proceso que consulte periódicamente, **queda desincronizado** con ZonaPagos.
+PSE y ciertos flujos de tarjeta de crédito no responden de forma síncrona. Un pago puede quedar en estado `999` (pendiente por finalizar) o `4001` (pendiente CR) por varios minutos o incluso horas. Si tu backend no tiene un proceso que consulte periódicamente, **queda desincronizado** con Zonapagos.
 
 Casos típicos:
 
@@ -73,7 +73,7 @@ CREATE TABLE pagos_zonapagos (
   flt_total_con_iva NUMERIC(12, 2) NOT NULL,
   int_id_forma_pago INT,                 -- Lo conoces al primer VerificacionPago
   estado_local VARCHAR(20) NOT NULL,     -- pendiente | aprobado | rechazado
-  int_estado_pago_zp INT,                -- El valor de ZonaPagos
+  int_estado_pago_zp INT,                -- El valor de Zonapagos
   str_codigo_transaccion VARCHAR(100),   -- CUS para PSE
   dt_inicio_pago TIMESTAMP NOT NULL,
   dt_ultima_consulta TIMESTAMP,
