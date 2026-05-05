@@ -88,7 +88,7 @@ app.get("/retorno-pago", async (req, res) => {
   const pedido = await db.pedidos.findOne({ str_id_pago: id_pago });
   if (!pedido) return res.status(404).send("Pedido no encontrado");
   
-  // 3. Verificar estado contra ZonaPagos
+  // 3. Verificar estado contra Zonapagos
   const verif = await axios.post(
     `${process.env.ZP_API_URL}/VerificacionPago`,
     {
