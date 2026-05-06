@@ -147,7 +147,7 @@
     {
   "group": "Link de cobro",
   "pages": [
-    "link-de-cobro/index",
+    "link-de-cobro/introducción",
     "link-de-cobro/empezar",
     {
       "group": "Guías de integración",
