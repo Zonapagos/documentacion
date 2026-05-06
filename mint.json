@@ -176,7 +176,8 @@
     {
       "group": "Soporte",
       "pages": [
-        "link-de-cobro/soporte"
+        "link-de-cobro/soporte/errores-comunes"
+        "link-de-cobro/soporte/preguntas-frecuentes"
       ]
         }
       ]
