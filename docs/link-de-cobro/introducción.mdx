@@ -3,8 +3,36 @@ title: Introducción
 ---
 
 <Info>
-Un link de pago es una URL que contiene toda la información de la transacción que se desea realizar.
+Un link de cobro es una URL que contiene toda la información de la transacción que se desea realizar. La integración de **Link de Cobro Zonapagos** permite generar enlaces de pago para que los clientes realicen transacciones electrónicas utilizando:
+
+- PSE
+- Tarjetas de crédito
+- Otros medios habilitados por Zonapagos
 </Info>
+
+--- 
+
+# Arquitectura general
+
+```text
+Cliente → Comercio → Zonapagos → Entidad Financiera
+```
+## Flujo General
+1. El comercio genera un link de pago.
+2. El cliente accede al enlace.
+3. Zonapagos procesa la transacción.
+4. Zonapagos notifica el resultado del pago al comercio.
+---
+
+# Ambientes
+
+| Ambiente | URL |
+|---|---|
+| Desarrollo | `https://www.zonavirtual.info/ApiPagosN3/api/LinkCreacion` |
+| Pruebas | `https://www.zonapagosdemo.com/ApiPagosN3/api/LinkCreacion` |
+| Producción | `https://www.zonapagos.com/ApiPagosN3/api/LinkCreacion` |
+
+---
 
 Esta sección reúne las dos formas de implementar links de cobro en Zonapagos:
 
