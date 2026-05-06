@@ -1,8 +1,8 @@
 {
   "name": "Zonapagos",
   "logo": {
-     "light": "/logos/logozona.svg",
-     "dark": "/logos/logozona.svg"
+    "light": "/logos/logozona.svg",
+    "dark": "/logos/logozona.svg"
   },
   "favicon": "https://zonavirtual.com/wp-content/uploads/2022/07/cropped-Favicon-web.png",
   "colors": {
@@ -23,106 +23,89 @@
       "group": "Zonapay - Pasarelas de pagos",
       "pages": [
         "docs/zonapay/introduccion",
-      {
-        "group": "Empezar",
-        "pages": [
-          "docs/zonapay/empezar/como-funciona",
-          "docs/zonapay/empezar/ambientes",
-          "docs/zonapay/empezar/guia-rapida",
-          "docs/zonapay/empezar/historial-de-versiones"
-        ]
-      },
-      {
-        "group": "Guías de integración",
-        "pages": [
-          "docs/zonapay/guias/iniciar-pago",
-          "docs/zonapay/guias/redirigir-usuario",
-          "docs/zonapay/guias/recibir-notificación-callback",
-          "docs/zonapay/guias/verificar-estado",
-          "docs/zonapay/guias/implementar-sonda",
-          "docs/zonapay/guias/manejo-errores",
-          "docs/zonapay/guias/idempotencia",
-          "docs/zonapay/guias/seguridad-de-notificación-callback",
-          "docs/zonapay/guias/logging",
-          "docs/zonapay/guias/checklist-produccion",
-          "docs/zonapay/guias/certificacion-pse"
-        ]
-      },
-      {
-        "group": "Casos de uso",
-        "pages": [
-          "docs/zonapay/guias/pse-simple",
-          "docs/zonapay/guias/tc-simple",
-          "docs/zonapay/guias/pagos-mixtos",
-          "docs/zonapay/guias/pagos-recurrentes",
-          "docs/zonapay/guias/cobro-transaccion"
-        ]
-      },
-      {
-        "group": "API Reference",
-        "pages": [
-          "docs/zonapay/api/introduccion",
-          "docs/zonapay/api/autenticacion",
-          "docs/zonapay/api/convenciones",
-          {
-            "group": "Endpoints",
-            "pages": [
-              "docs/zonapay/api/endpoints/inicio-pago",
-              "docs/zonapay/api/endpoints/verificacion-pago",
-              "docs/zonapay/api/endpoints/callback"
-            ]
-          },
-          {
-            "group": "Objetos",
-            "pages": [
-              "docs/zonapay/api/objetos/informacion-pago",
-              "docs/zonapay/api/objetos/informacion-seguridad",
-              "docs/zonapay/api/objetos/adicional-pago",
-              "docs/zonapay/api/objetos/adicional-configuracion",
-              "docs/zonapay/api/objetos/respuesta-inicio-pago",
-              "docs/zonapay/api/objetos/respuesta-verificacion"
-            ]
-          },
-          {
-            "group": "Tablas de referencia",
-            "pages": [
-              "docs/zonapay/api/referencia/estados-pago",
-              "docs/zonapay/api/referencia/medios-pago-codigos",
-              "docs/zonapay/api/referencia/tipos-id",
-              "docs/zonapay/api/referencia/adicionales-configuracion",
-              "docs/zonapay/api/referencia/cobro-transaccion"
-            ]
-          },
-          {
-            "group": "Formatos",
-            "pages": [
-              "docs/zonapay/api/formatos/parsear-str-res-pago",
-              "docs/zonapay/api/formatos/campos-por-medio-pago"
-            ]
-          }
-        ]
-      },
-      {
-        "group": "Ejemplos por lenguaje",
-        "pages": [
-          "docs/zonapay/recetas/curl",
-          "docs/zonapay/recetas/nodejs",
-          "docs/zonapay/recetas/python",
-          "docs/zonapay/recetas/csharp",
-          "docs/zonapay/recetas/php",
-          "docs/zonapay/recetas/postman"
-        ]
-      },
-      {
-        "group": "Soporte",
-        "pages": [
-          "docs/zonapay/soporte/faq",
-          "docs/zonapay/soporte/errores-comunes",
-          "docs/zonapay/soporte/sandbox"
-        ]
-      }
-    ]
-  },
+        {
+          "group": "Empezar",
+          "pages": [
+            "docs/zonapay/empezar/como-funciona",
+            "docs/zonapay/empezar/ambientes",
+            "docs/zonapay/empezar/guia-rapida",
+            "docs/zonapay/empezar/historial-de-versiones"
+          ]
+        },
+        {
+          "group": "Guías de integración",
+          "pages": [
+            "docs/zonapay/guias/iniciar-pago",
+            "docs/zonapay/guias/redirigir-usuario",
+            "docs/zonapay/guias/recibir-notificación-callback",
+            "docs/zonapay/guias/verificar-estado",
+            "docs/zonapay/guias/implementar-sonda",
+            "docs/zonapay/guias/manejo-errores",
+            "docs/zonapay/guias/idempotencia",
+            "docs/zonapay/guias/seguridad-de-notificación-callback",
+            "docs/zonapay/guias/logging",
+            "docs/zonapay/guias/checklist-produccion",
+            "docs/zonapay/guias/certificacion-pse"
+          ]
+        },
+        {
+          "group": "Casos de uso",
+          "pages": [
+            "docs/zonapay/guias/pse-simple",
+            "docs/zonapay/guias/tc-simple",
+            "docs/zonapay/guias/pagos-mixtos",
+            "docs/zonapay/guias/pagos-recurrentes",
+            "docs/zonapay/guias/cobro-transaccion"
+          ]
+        },
+        {
+          "group": "API Reference",
+          "pages": [
+            "docs/zonapay/api/introduccion",
+            "docs/zonapay/api/autenticacion",
+            "docs/zonapay/api/convenciones",
+            {
+              "group": "Endpoints",
+              "pages": [
+                "docs/zonapay/api/endpoints/inicio-pago",
+                "docs/zonapay/api/endpoints/verificacion-pago",
+                "docs/zonapay/api/endpoints/callback"
+              ]
+            },
+            {
+              "group": "Objetos",
+              "pages": [
+                "docs/zonapay/api/objetos/informacion-pago",
+                "docs/zonapay/api/objetos/informacion-seguridad",
+                "docs/zonapay/api/objetos/adicional-pago",
+                "docs/zonapay/api/objetos/adicional-configuracion",
+                "docs/zonapay/api/objetos/respuesta-inicio-pago",
+                "docs/zonapay/api/objetos/respuesta-verificacion"
+              ]
+            }
+          ]
+        },
+        {
+          "group": "Recetas por lenguaje",
+          "pages": [
+            "docs/zonapay/recetas/curl",
+            "docs/zonapay/recetas/nodejs",
+            "docs/zonapay/recetas/python",
+            "docs/zonapay/recetas/csharp",
+            "docs/zonapay/recetas/php",
+            "docs/zonapay/recetas/postman"
+          ]
+        },
+        {
+          "group": "Soporte",
+          "pages": [
+            "docs/zonapay/soporte/faq",
+            "docs/zonapay/soporte/errores-comunes",
+            "docs/zonapay/soporte/sandbox"
+          ]
+        }
+      ]
+    },
     {
       "group": "Zonarecaudo - Tesorería y portal",
       "pages": [
@@ -145,42 +128,41 @@
       ]
     },
     {
-  "group": "Link de cobro",
-  "pages": [
-    "link-de-cobro/introducción",
-    "link-de-cobro/empezar",
-    {
-      "group": "Guías de integración",
+      "group": "Link de cobro",
       "pages": [
+        "link-de-cobro/index",
+        "link-de-cobro/empezar",
         {
-          "group": "Integración manual",
+          "group": "Guías de integración",
           "pages": [
-            "link-de-cobro/integracion-manual/index",
-            "link-de-cobro/integracion-manual/configuracion",
-            "link-de-cobro/integracion-manual/base-de-datos",
-            "link-de-cobro/integracion-manual/creacion-link"
+            {
+              "group": "Integración manual",
+              "pages": [
+                "link-de-cobro/integracion-manual/index",
+                "link-de-cobro/integracion-manual/configuracion",
+                "link-de-cobro/integracion-manual/base-de-datos",
+                "link-de-cobro/integracion-manual/creacion-link"
+              ]
+            },
+            {
+              "group": "API REST",
+              "pages": [
+                "link-de-cobro/api-rest/index",
+                "link-de-cobro/api-rest/creacion-link",
+                "link-de-cobro/api-rest/request",
+                "link-de-cobro/api-rest/response",
+                "link-de-cobro/api-rest/notificacion"
+              ]
+            }
           ]
         },
         {
-          "group": "API REST",
+          "group": "Soporte",
           "pages": [
-            "link-de-cobro/api-rest/index",
-            "link-de-cobro/api-rest/creacion-link",
-            "link-de-cobro/api-rest/request",
-            "link-de-cobro/api-rest/response",
-            "link-de-cobro/api-rest/notificacion"
+            "link-de-cobro/soporte/manejo-errores"
           ]
         }
       ]
-    },
-    {
-      "group": "Soporte",
-      "pages": [
-        "link-de-cobro/soporte/errores-comunes"
-        "link-de-cobro/soporte/errores-comunes"
-       ]
-      }
-    ]
-  }
-]
+    }
+  ]
 }
