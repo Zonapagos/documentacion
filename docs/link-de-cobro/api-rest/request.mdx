@@ -1,1 +1,61 @@
+---
+title: "Request"
+---
+
+#Ejemplo de request
+
+```
+{
+  "IdComercio": 333,
+  "TipoAccion": 0,
+  "EstadoLink": 1,
+  "str_usuario": "usuario_api",
+  "str_clave": "clave_api",
+  "IdCreacion": 123,
+  "IdFactura": "FAC001",
+  "TipoIdCliente": "1",
+  "IdCliente": "123456789",
+  "Nombre": "Juan",
+  "Apellido": "Perez",
+  "Email": "cliente@correo.com",
+  "Telefono": "3000000000",
+  "CampoAdicional1": "Pedido Web",
+  "CampoAdicional2": "",
+  "CampoAdicional3": "",
+  "TotalconIva": 150000,
+  "TotalIva": 0,
+  "Saldo": 150000,
+  "Concepto": "Pago de factura",
+  "FechaVencimiento": "31/12/2025",
+  "ManejoFechaVencimiento": 0,
+  "EnviarLinkPago": 1,
+  "CanalEnvio": [
+    {
+      "CodigoCanal": 1,
+      "Valor": "cliente@correo.com"
+    }
+  ]
+}
+```
+
+## Parametros principales
+
+Los parametros y valores deben ser enviados en formato JSON
+
+| Parámetro          | Tipo    | Obligatorio | Descripción                         |
+| ------------------ | ------- | ----------- | ----------------------------------- |
+| `IdComercio`       | Integer | Sí          | Identificador del comercio          |
+| `TipoAccion`       | Integer | Sí          | `0` Crear / `1` Editar              |
+| `EstadoLink`       | Integer | Sí          | `1` Activo / `5` Inactivo           |
+| `str_usuario`      | String  | Sí          | Usuario API entregado por Zonapagos |
+| `str_clave`        | String  | Sí          | Clave API                           |
+| `IdFactura`        | String  | Sí          | Número único de factura             |
+| `TotalconIva`      | Double  | Sí          | Valor total de la transacción       |
+| `Concepto`         | String  | Sí          | Descripción del pago                |
+| `FechaVencimiento` | String  | No          | Fecha máxima de pago                |
+| `EnviarLinkPago`   | Integer | No          | `1` Sí / `0` No                     |
+
+
+
+
 
