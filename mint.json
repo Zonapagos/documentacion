@@ -137,7 +137,7 @@
             {
               "group": "Integración manual",
               "pages": [
-                "docs/link-de-cobro/integracion-manual/index",
+                "docs/link-de-cobro/integracion-manual/empezar",
                 "docs/link-de-cobro/integracion-manual/configuracion",
                 "docs/link-de-cobro/integracion-manual/base-de-datos",
                 "docs/link-de-cobro/integracion-manual/creacion-link"
