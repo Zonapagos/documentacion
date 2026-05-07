@@ -130,8 +130,7 @@
     {
       "group": "Link de cobro",
       "pages": [
-        "link-de-cobro/index",
-        "link-de-cobro/empezar",
+        "link-de-cobro/introducción",
         {
           "group": "Guías de integración",
           "pages": [
@@ -159,7 +158,8 @@
         {
           "group": "Soporte",
           "pages": [
-            "link-de-cobro/soporte/manejo-errores"
+            "link-de-cobro/soporte/manejo-errores",
+            "link-de-cobro/soporte/preguntas-frecuentes"
           ]
         }
       ]
