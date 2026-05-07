@@ -18,10 +18,10 @@ description: "Respuesta que retorna el resultado de la creación del link de pag
 Los parámetros y sus valores deben ser retornados como se muestra en la siguiente tabla: 
 
 | PARÁMETRO | TIPO | DESCRIPCIÓN |
-|----------|------|------------|
-| CodRespuesta | Integer | `0` = éxito, `1` = error parámetros, `2` = error autenticación, `9` = error técnico |
-| Descripcion | String | Mensaje del resultado |
-| str_url | String | URL del link de pago |
+|---|---|---|
+| **CodRespuesta** | Integer | • `0` → Éxito <br /> • `1` → Error de parámetros <br /> • `2` → Error autenticación <br /> • `9` → Error técnico |
+| **Descripcion** | String | Mensaje del resultado |
+| **str_url** | String | URL del link de pago |
 
 <Check> Si la creación es exitosa, se retorna la URL del link de pago. </Check> 
 <Warning> Si ocurre un error, no se retornará la URL. </Warning> 
