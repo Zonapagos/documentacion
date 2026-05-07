@@ -130,27 +130,27 @@
     {
       "group": "Link de cobro",
       "pages": [
-        "link-de-cobro/introducción",
+        "docs/link-de-cobro/introducción",
         {
           "group": "Guías de integración",
           "pages": [
             {
               "group": "Integración manual",
               "pages": [
-                "link-de-cobro/integracion-manual/index",
-                "link-de-cobro/integracion-manual/configuracion",
-                "link-de-cobro/integracion-manual/base-de-datos",
-                "link-de-cobro/integracion-manual/creacion-link"
+                "docs/link-de-cobro/integracion-manual/index",
+                "docs/link-de-cobro/integracion-manual/configuracion",
+                "docs/link-de-cobro/integracion-manual/base-de-datos",
+                "docs/link-de-cobro/integracion-manual/creacion-link"
               ]
             },
             {
               "group": "API REST",
               "pages": [
-                "link-de-cobro/api-rest/index",
-                "link-de-cobro/api-rest/creacion-link",
-                "link-de-cobro/api-rest/request",
-                "link-de-cobro/api-rest/response",
-                "link-de-cobro/api-rest/notificacion"
+                "docs/link-de-cobro/api-rest/index",
+                "docs/link-de-cobro/api-rest/creacion-link",
+                "docs/link-de-cobro/api-rest/request",
+                "docs/link-de-cobro/api-rest/response",
+                "docs/link-de-cobro/api-rest/notificacion"
               ]
             }
           ]
@@ -158,8 +158,8 @@
         {
           "group": "Soporte",
           "pages": [
-            "link-de-cobro/soporte/manejo-errores",
-            "link-de-cobro/soporte/preguntas-frecuentes"
+            "docs/link-de-cobro/soporte/manejo-errores",
+            "docs/link-de-cobro/soporte/preguntas-frecuentes"
           ]
         }
       ]
