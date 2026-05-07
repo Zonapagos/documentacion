@@ -41,24 +41,17 @@ Casos típicos:
   </Step>
 </Steps>
 
-## Diagrama del funcionamiento
-
-```mermaid
-flowchart TD
-    A[Sonda inicia cada 10-15 min] --> B[Query: pagos donde estado in PENDIENTE_999, PENDIENTE_4001, PENDIENTE_4000 y dt_inicio > 7 min]
-    B --> C{¿Hay pagos?}
-    C -->|No| Z[Fin]
-    C -->|Sí| D[Para cada pago]
-    D --> E[POST /VerificacionPago]
-    E --> F{int_estado_pago}
-    F -->|1| G[✅ Aprobado<br/>Actualizar BD<br/>Marcar cerrado]
-    F -->|999, 4001| H[⏳ Aún pendiente<br/>Dejar para siguiente iteración]
-    F -->|1000, 1001, 4000, 4003| I[❌ Rechazado<br/>Actualizar BD<br/>Marcar cerrado]
-    G --> J[Notificar al comercio]
-    I --> J
-    J --> D
-    H --> D
-```
+<div style={{ textAlign: "center", margin: "24px 0" }}>
+<img 
+    src="../imagenes/Funcionamiento_sonda.jpg"
+    style={{ 
+      width: "100%",
+      maxWidth: "500px",
+      borderRadius: "6px",
+      boxShadow: "0 10px 30px rgba(0,0,0,0.15), 0 2px 10px rgba(0,0,0,0.1)"
+    }}
+  />
+</div>
 
 ## Implementación paso a paso
 
