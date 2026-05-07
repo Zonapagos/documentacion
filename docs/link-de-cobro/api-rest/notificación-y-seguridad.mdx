@@ -1,0 +1,66 @@
+---
+title: "Webhook de Notificación"
+description: "onapagos notificará automáticamente al comercio el resultado del pago mediante un webhook HTTP."
+---
+
+# Endpoint sugerido
+
+POST /ApiPagosN3/api/NotificarPagos
+
+Método de la mensajería: **POST**
+Formato de la mensajería: **JSON**
+
+## Ejemplo de notificación
+
+```json
+{
+  "IdComercio": 2652,
+  "Password": "PagosN3",
+  "IdCliente": "123456789",
+  "IdFactura": "FAC001",
+  "EstadoPago": 1,
+  "FormaPago": 29,
+  "ValorTotalPagado": 150000,
+  "FechaPago": "13/10/2025 08:48:17",
+  "IdPago": 2653,
+  "TicketID": 20100180,
+  "NombreBanco": "Bancolombia"
+}
+```
+
+## Respuesta esperada del comercio
+
+```json
+{
+  "CodEstado": 0,
+  "DescripcionEstado": "Se realizó exitosamente la actualización del pago."
+}
+```
+
+### Parametros
+
+| PARÁMETRO  | TIPO    | DESCRIPCIÓN                 |
+| ---------- | ------- | --------------------------- |
+| IdComercio | Integer | Identificación del comercio |
+| Password   | String  | Contraseña compartida       |
+| IdCliente  | String  | Identificación cliente      |
+| IdFactura  | String  | Número de factura           |
+| EstadoPago | Integer | `1` = OK, `0` = error           |
+
+<Warning> El comercio debe controlar el doble asentamiento usando el IdPago. </Warning> 
+
+Esto garantiza idempotencia en el procesamiento del webhook.
+
+<Note> Si se reciben múltiples notificaciones con el mismo IdPago, se debe procesar solo una. </Note>
+
+---
+
+# Seguridad
+
+## Recomendaciones
+- Nunca exponer str_clave
+- Validar IPs autorizadas.
+- Implementar HTTPS obligatorio.
+- Registrar logs de auditoría.
+- Validar firmas o tokens si son configurados.
+- Implementar control de reintentos.
