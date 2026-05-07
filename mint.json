@@ -135,7 +135,7 @@
           "group": "Guías de integración",
           "pages": [
             {
-              "group": "Integración manual",
+              "group": "Link de pago manual",
               "pages": [
                 "docs/link-de-cobro/integracion-manual/empezar",
                 "docs/link-de-cobro/integracion-manual/configuracion",
@@ -144,9 +144,9 @@
               ]
             },
             {
-              "group": "API REST",
+              "group": "Link de pago API",
               "pages": [
-                "docs/link-de-cobro/api-rest/index",
+                "docs/link-de-cobro/api-rest/empezar",
                 "docs/link-de-cobro/api-rest/creacion-link",
                 "docs/link-de-cobro/api-rest/request",
                 "docs/link-de-cobro/api-rest/response",
