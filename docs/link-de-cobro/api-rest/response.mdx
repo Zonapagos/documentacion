@@ -1,1 +1,26 @@
+---
+title: "Response"
+description: "Respuesta que retorna el resultado de la creación del link de pago."
+---
 
+# Ejemplo de respuesta exitosa
+
+```json
+{ 
+   "CodRespuesta": "0", 
+   "Descripcion": "Consulta Exitosa", 
+"str_url":"fMFP3.zonavirtual.info” 
+}
+```
+
+## Parámetros de respuesta 
+
+| Código | Descripción         |
+| ------ | ------------------- |
+| `0`    | Creación exitosa    |
+| `1`    | Error de parámetros |
+| `2`    | Error autenticación |
+| `9`    | Error técnico       |
+
+<Info> Si la creación es exitosa, se retorna la URL del link de pago. </Info> 
+<Warning> Si ocurre un error, no se retornará la URL. </Warning> ```
