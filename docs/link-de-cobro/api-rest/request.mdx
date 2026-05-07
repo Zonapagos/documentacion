@@ -4,40 +4,96 @@ description: "Solicitud para generar un link de pago mediante Zonapagos."
 ---
 
 
-# Ejemplo de request
+# Ejemplos de request
 
-```
-{
-  "IdComercio": 333,
-  "TipoAccion": 0,
-  "EstadoLink": 1,
-  "str_usuario": "usuario_api",
-  "str_clave": "clave_api",
-  "IdCreacion": 123,
-  "IdFactura": "FAC001",
-  "TipoIdCliente": "1",
-  "IdCliente": "123456789",
-  "Nombre": "Juan",
-  "Apellido": "Perez",
-  "Email": "cliente@correo.com",
-  "Telefono": "3000000000",
-  "CampoAdicional1": "Pedido Web",
-  "CampoAdicional2": "",
-  "CampoAdicional3": "",
-  "TotalconIva": 150000,
-  "TotalIva": 0,
-  "Saldo": 150000,
-  "Concepto": "Pago de factura",
-  "FechaVencimiento": "31/12/2025",
-  "ManejoFechaVencimiento": 0,
-  "EnviarLinkPago": 1,
-  "CanalEnvio": [
-    {
-      "CodigoCanal": 1,
-      "Valor": "cliente@correo.com"
-    }
-  ]
+## Ejemplo de request sin fecha de vencimiento:
+
+```json
+{ 
+"IdComercio": 333, 
+"TipoAccion": 0, 
+“EstadoLink”: 1, 
+"str_usuario": "1111", 
+"str_clave": "1111", 
+"IdCreacion": 123, 
+"IdFactura": 12345, 
+"TipoIdCliente": "1", 
+"IdCliente": "1234567890", 
+"Nombre": "Pedro", 
+"Apellido": "Perez", 
+"Email": "prueba@prueba.com", 
+"Telefono": "4444444", 
+"CampoAdicional1": "1", 
+"CampoAdicional2": "2", 
+"CampoAdicional3": "3", 
+"TotalconIva": 15000, 
+"TotalIva": 0, 
+"Saldo": 15000, 
+"Concepto": "prueba sin fecha", 
+"FechaVencimiento": "", 
+"ManejoFechaVencimiento": 0, 
+"EnviarLinkPago": 1, 
+"CanalEnvio": [ 
+{ 
+    "CodigoCanal": 1, 
+     "Valor": "prueba@gmail.com" 
+} 
+], 
 }
+```
+
+## Ejemplo de request con fecha de vencimiento:
+
+```json
+{ 
+"IdComercio": 333, 
+"TipoAccion": 0, 
+“EstadoLink”: 1, 
+"str_usuario": "1111", 
+"str_clave": "1111", 
+"IdCreacion":123, 
+"IdFactura": 12345, 
+"TipoIdCliente": "1", 
+"IdCliente": "1234567890", 
+"Nombre": "Pedro", 
+"Apellido": "Perez", 
+"Email": "prueba@prueba.com", 
+"Telefono": "4444444", 
+"CampoAdicional1": "1", 
+"CampoAdicional2": "2", 
+"CampoAdicional3": "3", 
+"TotalconIva":  0, 
+"TotalIva": 0, 
+"Saldo": 0, 
+"Concepto": "", 
+"FechaVencimiento": "", 
+"ManejoFechaVencimiento": 1, 
+"EnviarLinkPago": 1, 
+"CanalEnvio": [ 
+{ 
+    "CodigoCanal": 1, 
+     "Valor": "prueba@gmail.com" 
+} 
+], 
+"FechasDeVencimiento": [ 
+{ 
+     "TotalconIva": 50000, 
+     "TotalIva": 0, 
+     "Saldo": 50000, 
+     "Concepto": "fecha1", 
+     "FechaVencimiento": "01/12/2020", 
+     "Orden": 1 
+}, 
+{ 
+     "TotalconIva": 150000, 
+     "TotalIva": 0, 
+     "Saldo": 150000, 
+     "Concepto": "fecha2", 
+     "FechaVencimiento": "31/12/2020", 
+     "Orden": 2 
+} 
+], 
+} 
 ```
 
 ## Parametros principales
@@ -58,6 +114,14 @@ Los parametros y valores deben ser enviados en formato JSON
 | `EnviarLinkPago`   | Integer | No          | `1` Sí / `0` No                     |
 
 
+<Warning> Los parámetros obligatorios deben enviarse correctamente o la API retornará error. </Warning> 
 
+# Canales de envío
+
+| Código | Canal    |
+| ------ | -------- |
+| `1`    | Email    |
+| `2`    | SMS      |
+| `3`    | WhatsApp |
 
 
