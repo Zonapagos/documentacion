@@ -88,12 +88,12 @@
         {
           "group": "Ejemplos por lenguaje",
           "pages": [
-            "docs/zonapay/recetas/curl",
-            "docs/zonapay/recetas/nodejs",
-            "docs/zonapay/recetas/python",
-            "docs/zonapay/recetas/csharp",
-            "docs/zonapay/recetas/php",
-            "docs/zonapay/recetas/postman"
+            "docs/zonapay/ejemplos/curl",
+            "docs/zonapay/ejemplos/nodejs",
+            "docs/zonapay/ejemplos/python",
+            "docs/zonapay/ejemplos/csharp",
+            "docs/zonapay/ejemplos/php",
+            "docs/zonapay/ejemplos/postman"
           ]
         },
         {
