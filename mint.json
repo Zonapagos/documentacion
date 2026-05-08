@@ -86,7 +86,7 @@
           ]
         },
         {
-          "group": "Recetas por lenguaje",
+          "group": "Ejemplos por lenguaje",
           "pages": [
             "docs/zonapay/recetas/curl",
             "docs/zonapay/recetas/nodejs",
