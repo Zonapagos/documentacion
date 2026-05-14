@@ -1,0 +1,43 @@
+---
+title: "Configuración Base de Datos"
+---
+
+
+Para completar la configuración del comercio como Link de Pago NC se requiere parametrización en base de datos.
+
+---
+
+## Configuraciones Requeridas
+
+### Base Transacciones
+
+Crear consecutivos en:
+
+- pag_pago_consecutivos
+- pag_consecutivos_pago
+
+---
+
+### Base Facturas
+
+Insertar registro en:
+
+```text
+tiv_pagos_parametros
+```
+
+---
+
+### Base Coordinadora
+
+Insertar comercio en:
+
+```text
+idio_correo_x_comercio
+```
+
+---
+
+## Requerimiento Operaciones
+
+La configuración debe solicitarse mediante Zonayuda al equipo Operaciones TI.
