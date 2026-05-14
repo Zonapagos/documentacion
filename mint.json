@@ -138,6 +138,19 @@
               "group": "Link de pago manual",
               "pages": [
                 "docs/link-de-cobro/integracion-manual/creación-link"
+                {
+                  "group": "Link de Pago Manual",
+                  "pages": [
+                    "link-pago-manual/overview",
+                    "link-pago-manual/configuracion-taquilla",
+                    "link-pago-manual/configuracion-bd",
+                    "link-pago-manual/crear-link-pago",
+                    "link-pago-manual/compartir-link",
+                    "link-pago-manual/configuraciones-adicionales",
+                    "link-pago-manual/ciclo-pago",
+                    "link-pago-manual/faq"
+                  ]
+                }
               ]
             },
             {
