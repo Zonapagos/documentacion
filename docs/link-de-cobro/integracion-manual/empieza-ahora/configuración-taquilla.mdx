@@ -1,0 +1,138 @@
+---
+title: "Configuración de Taquilla"
+---
+
+## Acceso administrativo
+
+Ingresar al módulo administrativo de Zonapagos con las credenciales de acceso.
+
+---
+
+## Crear Comercio
+
+En la parte lateral izquierda seleccionar: 
+
+```text
+Comercios → creación edición admin
+```
+
+Luego:
+
+1. Dar clic en “Adicionar”.
+   
+2. Diligenciar formulario comercio.
+   
+3. Guardar configuración.
+
+---
+
+## Configuración Plantilla
+
+En el botón información:
+
+| Campo | Valor |
+|---|---|
+| Plantilla | taquillaszp |
+
+---
+
+## Configuración Parámetros
+
+En el botón Parámetros:
+
+| Campo | Valor |
+|---|---|
+| Plantilla Administrativa | zonapagos_v2 |
+
+---
+
+## Medios de Pago
+
+En la opción:
+
+```text
+Medios de Pago
+```
+
+Configurar los medios habilitados para el link de pago.
+
+---
+
+## Código Servicio d
+
+En:
+
+```text
+Códigos de Servicio
+```
+
+Configurar:
+
+| Ambiente | Código |
+|---|---|
+| Pruebas | 2701 |
+
+---
+
+## Nuevo Core
+
+Configurar comercio como:
+
+```text
+Pasarela de pago nuevo core nativo
+```
+
+---
+
+## Cadena Conexión
+
+Ruta:
+
+```text
+General → Cadena Conexión a Servidores
+```
+
+Seleccionar:
+
+| Campo | Valor |
+|---|---|
+| Cadena Conexión | ZPFacturas |
+
+---
+
+## Parámetros Taquilla
+
+Configurar:
+
+| Campo | Valor |
+|---|---|
+| Modalidad taquilla | Con Verificación de Facturas Version3 Nuevo Core |
+| Modalidad validación | Con identificador cliente |
+
+---
+
+## URL Web Service
+
+```text
+https://www.zonapagos.com/ApiPagosN3/
+```
+
+---
+
+## Clave Inicio Pago WS
+
+| Campo | Valor |
+|---|---|
+| Clave inicio pago pasarela WS | PagosN3 |
+
+---
+
+## Otros Parámetros
+
+Adicionar:
+
+| Código | Valor |
+|---|---|
+| 1004 | 1 |
+| 1005 | http://zonapagos.com/NV_PagosN3/Views/ConfirmarPago.aspx |
+| 1006 | Valor parámetro id_clave |
