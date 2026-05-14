@@ -137,10 +137,7 @@
             {
               "group": "Link de pago manual",
               "pages": [
-                "docs/link-de-cobro/integracion-manual/creación-link"
-                {
-                  "group": "empieza ahora",
-                  "pages": [
+                "docs/link-de-cobro/integracion-manual/creación-link",
                     "link-de-cobro/integracion-manual/empieza-ahora/configuracion-taquilla",
                     "link-de-cobro/integracion-manual/empieza-ahora/configuracion-bd",
                     "link-de-cobro/integracion-manual/empieza-ahora/crear-link-pago",
