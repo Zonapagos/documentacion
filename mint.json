@@ -135,10 +135,10 @@
       "group": "Guías de integración",
       "pages": [
         {
-          "group": "Link de pago manual",
+          "group": "Link de cobro manual",
           "pages": [
             "docs/link-de-cobro/integracion-manual/creación-link",
-            "docs/link-de-cobro/integracion-manual/empieza-ahora/configuracion-taquilla",
+            "docs/link-de-cobro/integracion-manual/empieza-ahora/configuración-taquilla",
             "docs/link-de-cobro/integracion-manual/empieza-ahora/configuracion-bd",
             "docs/link-de-cobro/integracion-manual/empieza-ahora/crear-link-pago",
             "docs/link-de-cobro/integracion-manual/empieza-ahora/compartir-link",
@@ -147,7 +147,7 @@
           ]
         },
         {
-          "group": "Link de pago API",
+          "group": "Link de cobro API",
           "pages": [
             "docs/link-de-cobro/api-rest/empezar",
             "docs/link-de-cobro/api-rest/request",
