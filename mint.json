@@ -128,46 +128,40 @@
       ]
     },
     {
-      "group": "Link de cobro",
+  "group": "Link de cobro",
+  "pages": [
+    "docs/link-de-cobro/introducción",
+    {
+      "group": "Guías de integración",
       "pages": [
-        "docs/link-de-cobro/introducción",
         {
-          "group": "Guías de integración",
+          "group": "Link de pago manual",
           "pages": [
-            {
-              "group": "Link de pago manual",
-              "pages": [
-                "docs/link-de-cobro/integracion-manual/creación-link",
-                "docs/link-de-cobro/integracion-manual/empieza-ahora/configuracion-taquilla",
-                "docs/link-de-cobro/integracion-manual/empieza-ahora/configuracion-bd",
-                "docs/link-de-cobro/integracion-manual/empieza-ahora/crear-link-pago",
-                "docs/link-de-cobro/integracion-manual/empieza-ahora/compartir-link",
-                "docs/link-de-cobro/integracion-manual/empieza-ahora/configuraciones-adicionales",
-                "docs/link-de-cobro/integracion-manual/empieza-ahora/ciclo-pago"
-              ]
-            }
+            "docs/link-de-cobro/integracion-manual/creación-link",
+            "docs/link-de-cobro/integracion-manual/empieza-ahora/configuracion-taquilla",
+            "docs/link-de-cobro/integracion-manual/empieza-ahora/configuracion-bd",
+            "docs/link-de-cobro/integracion-manual/empieza-ahora/crear-link-pago",
+            "docs/link-de-cobro/integracion-manual/empieza-ahora/compartir-link",
+            "docs/link-de-cobro/integracion-manual/empieza-ahora/configuraciones-adicionales",
+            "docs/link-de-cobro/integracion-manual/empieza-ahora/ciclo-pago"
+          ]
+        },
+        {
+          "group": "Link de pago API",
+          "pages": [
+            "docs/link-de-cobro/api-rest/empezar",
+            "docs/link-de-cobro/api-rest/request",
+            "docs/link-de-cobro/api-rest/response",
+            "docs/link-de-cobro/api-rest/notificación-y-seguridad"
           ]
         }
       ]
     },
-            {
-              "group": "Link de pago API",
-              "pages": [
-                "docs/link-de-cobro/api-rest/empezar",
-                "docs/link-de-cobro/api-rest/request",
-                "docs/link-de-cobro/api-rest/response",
-                "docs/link-de-cobro/api-rest/notificación-y-seguridad"
-              ]
-            }
-          ]
-        },
-        {
-          "group": "Soporte",
-          "pages": [
-            "docs/link-de-cobro/soporte/errores-comunes",
-            "docs/link-de-cobro/soporte/preguntas-frecuentes"
-          ]
-        }
+    {
+      "group": "Soporte",
+      "pages": [
+        "docs/link-de-cobro/soporte/errores-comunes",
+        "docs/link-de-cobro/soporte/preguntas-frecuentes"
       ]
     }
   ]
