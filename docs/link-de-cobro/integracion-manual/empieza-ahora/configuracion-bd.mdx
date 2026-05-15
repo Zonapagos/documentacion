@@ -3,15 +3,32 @@ title: "Configuración Base de Datos"
 ---
 
 
-Para completar la configuración del comercio como Link de Pago NC se requiere parametrización en base de datos.
+Para completar la configuración del comercio como link de pago se debe realizar una parametrización por base de datos, para ello 
+se le debe asignar un caso de zonayuda al equipo de Operaciones con la siguiente configuración: 
 
 ---
 
 ## Configuraciones Requeridas
 
+Configurar por base de datos los mismos pasos de link de pagos (poner los pasos). Existe un txt con esos pasos en la parte 
+que dice “*id comercio* debe ir el id único de la taquilla. 
+
+<div style={{ textAlign: "center", margin: "24px 0" }}>
+<img 
+    src="/docs/imagenes/configurar-bd.jpg"
+    style={{ 
+      width: "100%",
+      maxWidth: "500px",
+      borderRadius: "6px",
+      boxShadow: "0 10px 30px rgba(0,0,0,0.15), 0 2px 10px rgba(0,0,0,0.1)"
+    }}
+  />
+</div>
+
 ### Base Transacciones
 
-Crear consecutivos en:
+Crear el consecutivo para el 
+comercio que va a ser link de pagos NC 
 
 - pag_pago_consecutivos
 - pag_consecutivos_pago
@@ -20,7 +37,7 @@ Crear consecutivos en:
 
 ### Base Facturas
 
-Insertar registro en:
+En la bd de facturas debe de tener el registro en la tabla:
 
 ```text
 tiv_pagos_parametros
@@ -30,14 +47,9 @@ tiv_pagos_parametros
 
 ### Base Coordinadora
 
-Insertar comercio en:
+En la bd coordinadora en la tabla:
 
 ```text
 idio_correo_x_comercio
 ```
-
----
-
-## Requerimiento Operaciones
-
-La configuración debe solicitarse mediante Zonayuda al equipo Operaciones TI.
+Realizar insert al comercio.
