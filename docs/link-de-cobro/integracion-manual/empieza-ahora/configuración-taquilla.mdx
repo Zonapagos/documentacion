@@ -141,6 +141,8 @@ En:
 ```text
 Códigos de Servicio
 ```
+se configura y habilita el código de servicio del comercio. El código de servicio 
+para los bancos de pruebas de zonapagos es el 2701. 
 
 Configurar:
 
@@ -148,31 +150,142 @@ Configurar:
 |---|---|
 | Pruebas | 2701 |
 
+<div style={{ textAlign: "center", margin: "24px 0" }}>
+<img 
+    src="/docs/imagenes/codigos-servicio.jpg"
+    style={{ 
+      width: "100%",
+      maxWidth: "500px",
+      borderRadius: "6px",
+      boxShadow: "0 10px 30px rgba(0,0,0,0.15), 0 2px 10px rgba(0,0,0,0.1)"
+    }}
+  />
+</div>
+
 ---
 
 ## Nuevo Core
+
+Posteriormente realizar la configuración en la opción administrativa “Configurar Comercios Nuevo Core” tal cual 
+como si fuese un comercio pasarela de pago nuevo core Nativo 
 
 Configurar comercio como:
 
 ```text
 Pasarela de pago nuevo core nativo
 ```
+<div style={{ textAlign: "center", margin: "24px 0" }}>
+<img 
+    src="/docs/imagenes/configurar-comercio.jpg"
+    style={{ 
+      width: "100%",
+      maxWidth: "500px",
+      borderRadius: "6px",
+      boxShadow: "0 10px 30px rgba(0,0,0,0.15), 0 2px 10px rgba(0,0,0,0.1)"
+    }}
+  />
+</div>
+
+<div style={{ textAlign: "center", margin: "24px 0" }}>
+<img 
+    src="/docs/imagenes/comercio-nc.jpg"
+    style={{ 
+      width: "100%",
+      maxWidth: "500px",
+      borderRadius: "6px",
+      boxShadow: "0 10px 30px rgba(0,0,0,0.15), 0 2px 10px rgba(0,0,0,0.1)"
+    }}
+  />
+</div>
 
 ---
 
 ## Cadena Conexión
 
-Ruta:
+1. Asignar la cadena de conexión, para esto en “General”, seleccionar la opción “Cadena Conexión a 
+Servidores”.
 
-```text
-General → Cadena Conexión a Servidores
-```
+<div style={{ textAlign: "center", margin: "24px 0" }}>
+<img 
+    src="/docs/imagenes/cadena-conexion.jpg"
+    style={{ 
+      width: "100%",
+      maxWidth: "500px",
+      borderRadius: "6px",
+      boxShadow: "0 10px 30px rgba(0,0,0,0.15), 0 2px 10px rgba(0,0,0,0.1)"
+    }}
+  />
+</div>
 
-Seleccionar:
+2. Dar clic en el botón “Adicionar”
 
-| Campo | Valor |
-|---|---|
-| Cadena Conexión | ZPFacturas |
+<div style={{ textAlign: "center", margin: "24px 0" }}>
+<img 
+    src="/docs/imagenes/adicionar-cadena.jpg"
+    style={{ 
+      width: "100%",
+      maxWidth: "500px",
+      borderRadius: "6px",
+      boxShadow: "0 10px 30px rgba(0,0,0,0.15), 0 2px 10px rgba(0,0,0,0.1)"
+    }}
+  />
+</div>
+
+3. Dar clic en el botón “Buscar” para buscar el comercio al cual se le va a asignar la cadena de conexión.
+
+<div style={{ textAlign: "center", margin: "24px 0" }}>
+<img 
+    src="/docs/imagenes/buscar-comercio.jpg"
+    style={{ 
+      width: "100%",
+      maxWidth: "500px",
+      borderRadius: "6px",
+      boxShadow: "0 10px 30px rgba(0,0,0,0.15), 0 2px 10px rgba(0,0,0,0.1)"
+    }}
+  />
+</div>
+
+4. Escoger una de las opciones para realizar la búsqueda del comercio y dar clic en el botón “Buscar”.
+
+<div style={{ textAlign: "center", margin: "24px 0" }}>
+<img 
+    src="/docs/imagenes/opciones-buscar.jpg"
+    style={{ 
+      width: "100%",
+      maxWidth: "500px",
+      borderRadius: "6px",
+      boxShadow: "0 10px 30px rgba(0,0,0,0.15), 0 2px 10px rgba(0,0,0,0.1)"
+    }}
+  />
+</div>
+
+5. Cuando se muestre el comercio buscado, dar clic en “Seleccionar”.
+
+<div style={{ textAlign: "center", margin: "24px 0" }}>
+<img 
+    src="/docs/imagenes/seleccionar-comercio.jpg"
+    style={{ 
+      width: "100%",
+      maxWidth: "500px",
+      borderRadius: "6px",
+      boxShadow: "0 10px 30px rgba(0,0,0,0.15), 0 2px 10px rgba(0,0,0,0.1)"
+    }}
+  />
+</div>
+
+6. Luego en la opción “Cadena Conexión”, seleccionar “ZPFacturas” y dar clic en Grabar.
+
+<div style={{ textAlign: "center", margin: "24px 0" }}>
+<img 
+    src="/docs/imagenes/grabar-cadena.jpg"
+    style={{ 
+      width: "100%",
+      maxWidth: "500px",
+      borderRadius: "6px",
+      boxShadow: "0 10px 30px rgba(0,0,0,0.15), 0 2px 10px rgba(0,0,0,0.1)"
+    }}
+  />
+</div>
 
 ---
 
@@ -180,19 +293,55 @@ Seleccionar:
 
 Configurar:
 
-| Campo | Valor |
-|---|---|
-| Modalidad taquilla | Con Verificación de Facturas Version3 Nuevo Core |
-| Modalidad validación | Con identificador cliente |
+1.  Luego por dentro de la taquilla seleccionar la opción “Parámetros taquilla”.
+
+<div style={{ textAlign: "center", margin: "24px 0" }}>
+<img 
+    src="/docs/imagenes/parametros-taquilla.jpg"
+    style={{ 
+      width: "100%",
+      maxWidth: "500px",
+      borderRadius: "6px",
+      boxShadow: "0 10px 30px rgba(0,0,0,0.15), 0 2px 10px rgba(0,0,0,0.1)"
+    }}
+  />
+</div>
+
+2. En la opción “Modalidad taquilla” seleccionar: “Con Verificación de Facturas Version3 Nuevo Core” y en la opción 
+“Modalidad validación” seleccionar “Con identificador cliente”. 
+
+<div style={{ textAlign: "center", margin: "24px 0" }}>
+<img 
+    src="/docs/imagenes/modalidad-taquilla.jpg"
+    style={{ 
+      width: "100%",
+      maxWidth: "500px",
+      borderRadius: "6px",
+      boxShadow: "0 10px 30px rgba(0,0,0,0.15), 0 2px 10px rgba(0,0,0,0.1)"
+    }}
+  />
+</div>
 
 ---
 
 ## URL Web Service
 
+En el campo “URL web service comercio” se digita:
+
 ```text
 https://www.zonapagos.com/ApiPagosN3/
 ```
-
+<div style={{ textAlign: "center", margin: "24px 0" }}>
+<img 
+    src="/docs/imagenes/url-comercio.jpg"
+    style={{ 
+      width: "100%",
+      maxWidth: "500px",
+      borderRadius: "6px",
+      boxShadow: "0 10px 30px rgba(0,0,0,0.15), 0 2px 10px rgba(0,0,0,0.1)"
+    }}
+  />
+</div>
 ---
 
 ## Clave Inicio Pago WS
@@ -201,14 +350,85 @@ https://www.zonapagos.com/ApiPagosN3/
 |---|---|
 | Clave inicio pago pasarela WS | PagosN3 |
 
+<div style={{ textAlign: "center", margin: "24px 0" }}>
+<img 
+    src="/docs/imagenes/clave-inicio.jpg"
+    style={{ 
+      width: "100%",
+      maxWidth: "500px",
+      borderRadius: "6px",
+      boxShadow: "0 10px 30px rgba(0,0,0,0.15), 0 2px 10px rgba(0,0,0,0.1)"
+    }}
+  />
+</div>
+
 ---
 
 ## Otros Parámetros
 
-Adicionar:
+ En la opción “otros parámetros”
 
-| Código | Valor |
-|---|---|
-| 1004 | 1 |
-| 1005 | http://zonapagos.com/NV_PagosN3/Views/ConfirmarPago.aspx |
-| 1006 | Valor parámetro id_clave |
+<div style={{ textAlign: "center", margin: "24px 0" }}>
+<img 
+    src="/docs/imagenes/otros-parametros.jpg"
+    style={{ 
+      width: "100%",
+      maxWidth: "500px",
+      borderRadius: "6px",
+      boxShadow: "0 10px 30px rgba(0,0,0,0.15), 0 2px 10px rgba(0,0,0,0.1)"
+    }}
+  />
+</div>
+
+Dar clic en el botón “Adicionar” y para cada parámetro realizar la respectiva configuración. 
+
+<div style={{ textAlign: "center", margin: "24px 0" }}>
+<img 
+    src="/docs/imagenes/adicionar-parametros.jpg"
+    style={{ 
+      width: "100%",
+      maxWidth: "500px",
+      borderRadius: "6px",
+      boxShadow: "0 10px 30px rgba(0,0,0,0.15), 0 2px 10px rgba(0,0,0,0.1)"
+    }}
+  />
+</div>
+
+**1004=1**
+<div style={{ textAlign: "center", margin: "24px 0" }}>
+<img 
+    src="/docs/imagenes/parametro-1004.jpg"
+    style={{ 
+      width: "100%",
+      maxWidth: "500px",
+      borderRadius: "6px",
+      boxShadow: "0 10px 30px rgba(0,0,0,0.15), 0 2px 10px rgba(0,0,0,0.1)"
+    }}
+  />
+</div>
+
+**1005=** `http://zonapagos.com/NV_PagosN3/Views/ConfirmarPago.aspx`
+<div style={{ textAlign: "center", margin: "24px 0" }}>
+<img 
+    src="/docs/imagenes/parametro-1005.jpg"
+    style={{ 
+      width: "100%",
+      maxWidth: "500px",
+      borderRadius: "6px",
+      boxShadow: "0 10px 30px rgba(0,0,0,0.15), 0 2px 10px rgba(0,0,0,0.1)"
+    }}
+  />
+</div>
+
+**1006=** Valor parámetro `id_clave` 
+<div style={{ textAlign: "center", margin: "24px 0" }}>
+<img 
+    src="/docs/imagenes/parametro-1006.jpg"
+    style={{ 
+      width: "100%",
+      maxWidth: "500px",
+      borderRadius: "6px",
+      boxShadow: "0 10px 30px rgba(0,0,0,0.15), 0 2px 10px rgba(0,0,0,0.1)"
+    }}
+  />
+</div>
