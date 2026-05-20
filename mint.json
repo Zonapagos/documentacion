@@ -123,8 +123,11 @@
     {
       "group": "Tokenización",
       "pages": [
-        "docs/tokenizacion/introducción",
-        "docs/tokenizacion/Preguntas-frecuentes"
+        "docs/tokenizacion/introduccion",
+        "docs/tokenizacion/inicio-de-pago",
+        "docs/tokenizacion/notificar-token",
+        "docs/tokenizacion/recurrencia",
+        "docs/tokenizacion/verificacion-transaccion"
       ]
     },
     {
