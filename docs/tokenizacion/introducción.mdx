@@ -1,15 +1,34 @@
 ---
-title: "Introducción"
+title: Introducción
+description: Integración de Inicio de Pago Tokenización con Zonapagos.
 ---
 
-La integración Inicio de Pago Tokenización permite iniciar transacciones electrónicas mediante consumo API REST.
 
-La solución soporta:
+La integración de **Tokenización NC** de Zonapagos permite a los comercios realizar pagos utilizando tarjetas tokenizadas de forma segura, facilitando procesos 
+de cobro recurrente y almacenamiento seguro de medios de pago.
 
-- Tokenización NC
-- Recurrencia
-- Verificación de pagos
-- Consulta de estados transaccionales
+Esta documentación describe el proceso completo de integración de los servicios API relacionados con:
+
+- Inicio de pago
+- Generación y notificación de tokens
+- Pagos recurrentes
+- Verificación del estado de transacciones
+
+## Características de la integración
+
+- Comunicación mediante servicios REST
+- Mensajería en formato JSON
+- Integración segura mediante credenciales de comercio
+- Soporte para tokenización y recurrencia
+- Consulta del estado de pagos y transacciones
+
+## Ambientes
+
+### Pruebas
+
+```text
+https://www.zonapagosdemo.com/Apis_CicloPago/api/InicioPago
+
 
 ## Flujo General
 
@@ -40,7 +59,7 @@ POST https://www.zonapagos.com/Apis_CicloPago/api/InicioPago
 | Método HTTP | `POST`|
 | Formato     | `JSON`|
 
-# Parámetros de Entrada
+## Parámetros de Entrada
 
 La estructura del request está compuesta por:
 
