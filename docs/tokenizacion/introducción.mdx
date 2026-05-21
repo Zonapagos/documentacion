@@ -30,13 +30,14 @@ Esta documentación describe el proceso completo de integración de los servicio
 https://www.zonapagosdemo.com/Apis_CicloPago/api/InicioPago
 ```
 
-## Flujo General
+## ¿Cómo funciona la tokenización en Zonapagos?
 
-1. El comercio inicia el pago.
-2. Zonapagos genera la URL de pago.
-3. El cliente realiza la transacción.
-4. Zonapagos retorna el resultado.
-5. El comercio puede consultar el estado del pago.
+1. El comercio envía los datos del cliente pagador a Zonapagos.
+2. Zonapagos genera una URL segura.
+3. El cliente pagador es redirigido al formulario de Zonapagos y registra su tarjeta.
+4. Zonapagos tokeniza la tarjeta.
+5. Zonapagos envía el token al comercio.
+6. El comercio usa el token para futuros cobros.
 
 <div style={{ textAlign: "center", margin: "24px 0" }}>
 <img 
