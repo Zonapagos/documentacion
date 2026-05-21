@@ -117,6 +117,8 @@
       "group": "Zonaexpress - Formulario de pago",
       "pages": [
         "docs/zonaexpress/introducción",
+        "docs/zonaexpress/casos-de-uso",
+        "docs/zonaexpress/características",
         "docs/zonaexpress/Preguntas-frecuentes"
       ]
     },
