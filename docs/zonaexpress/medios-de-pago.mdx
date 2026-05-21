@@ -22,24 +22,24 @@ por el comercio.
 
 <Nota> **Nota:** Los medios de pago disponibles para el usuario final dependerán de la configuración comercial y habilitación realizada para cada comercio. </Nota>
  
-<Nota> **Importante:** Para la modalidad **Zonaexpress** no aplica el modelo de integración mediante **Caja Banco Web Services**. </Nota>
+<Warning> **Importante:** Para la modalidad **Zonaexpress** no aplica el modelo de integración mediante **Caja Banco Web Services**. </Warning>
 
 ### Flujo de selección del medio de pago
  
 ```mermaid
 flowchart LR
- 
+
 A[Usuario diligencia formulario]
 --> B[Redirección automática a taquilla]
- 
+
 B --> C[Selección del medio de pago]
- 
+
 C --> D[PSE]
 C --> E[Tarjeta de crédito]
 C --> F[Nequi]
 C --> G[Daviplata]
 C --> H[Botón Bancolombia]
- 
+
 D --> I[Transacción completada]
 E --> I
 F --> I
