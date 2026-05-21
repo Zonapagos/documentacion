@@ -1,1 +1,53 @@
+---
+title: "Introducción"
+description: "Zonaexpress es una solución de recaudo diseñada para permitir a los comercios recibir pagos sin requerir previamente una base de facturas o cuentas por cobrar."
+---
+
+La solución habilita una experiencia de recaudo abierta mediante un formulario tipo consignación virtual, configurable según las necesidades del comercio, donde el usuario final diligencia
+información antes de ser dirigido al proceso de pago.
+
+Este modelo permite capturar datos relevantes del cliente y construir información transaccional desde el primer contacto.
+
+##Capacidades principales
+
+- Creación de formularios personalizados.
+- Recolección de información del usuario final antes del pago.
+- Redirección automática hacia el portal de pagos.
+- Configuración visual alineada con la identidad del comercio.
+
+## ¿Cómo funciona?
+
+El flujo operativo de Zonaexpress se basa en la captura previa de información y posterior redirección al proceso de pago.
+
+### Flujo del proceso
+
+1. El comercio define los campos que deberá diligenciar el cliente.
+2. Zonapagos configura la taquilla donde estará disponible el formulario.
+3. Se comparte una URL única del formulario al comercio.
+4. El cliente pagador accede al enlace e ingresa sus datos.
+5. El sistema redirige automáticamente al portal de pago.
+6. El usuario selecciona el medio de pago y finaliza la transacción.
+7. El comercio consolida y utiliza la información capturada.
+
+## Diagrama de flujo
+
+flowchart TD
+
+A[Comercio define campos del formulario]
+--> B[Zonapagos configura la taquilla]
+
+B --> C[Generación de URL única]
+
+C --> D[Cliente accede al formulario]
+
+D --> E[Diligenciamiento de información]
+
+E --> F[Redirección automática al portal de pagos]
+
+F --> G[Selección del medio de pago]
+
+G --> H[Pago completado]
+
+H --> I[Consolidación de información capturada]
+
 
