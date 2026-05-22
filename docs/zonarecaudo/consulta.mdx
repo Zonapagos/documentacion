@@ -65,10 +65,8 @@ Los parámetros y sus valores deben ser retornados como se muestra en la siguien
 
 | Nombre | Tipo | Descripción |
 |---|---|---|
-| CodRespuesta | Integer **Obligatorio** | Código de respuesta dependiendo del estado de la consulta `0` Si la consulta es exitosa. `1` Si no se encontraron registros en la consulta. 
-`2` Error en autenticación de seguridad. `9` Error técnico. |
-| Descripcion | String(100) **Obliogatorio** | Retorna los siguientes mensajes de acuerdo con el código respondido en el parámetro anterior `0` Consulta Exitosa `1` No se encontraron registros en la consulta 
-`2` Error en autenticación de seguridad `9` Error Técnico |
+| CodRespuesta | Integer **Obligatorio** | Código de respuesta dependiendo del estado de la consulta `0` Si la consulta es exitosa. `1` Si no se encontraron registros en la consulta. `2` Error en autenticación de seguridad. `9` Error técnico. |
+| Descripcion | String(100) **Obliogatorio** | Retorna los siguientes mensajes de acuerdo con el código respondido en el parámetro anterior `0` Consulta Exitosa `1` No se encontraron registros en la consulta `2` Error en autenticación de seguridad `9` Error Técnico |
 | Facturas | Array **Obliogatorio** | se devuelven todos los registros validos en la consulta realizada |
 | CodServicioPse | String(10) **Opcional** | Retorna el código que se utilizará para realizar los pagos con medio de pago PSE. |
 | CambiarClave | Integer **Opcional** | Retorna  el  parámetro  que  se  utiliza  para  indicar  si  el cliente  debe  cambiar  clave  antes  de  acceder  al  pago  de facturas |
