@@ -53,10 +53,10 @@ deberá tener en cuanta uno para el asentamiento. Se deberá desarrollar con las
 
 | NOMBRE           | TIPO Y TAMAÑO                                                    | DESCRIPCIÓN|
 | ---------------- | ---------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
-| IdFactura        | String<br>Tamaño máximo: veinte (20) caracteres<br>*Obligatorio* | Número único que identifica cada factura involucrada en el pago.|
-| ValorPagado      | Double<br>Tamaño máximo: veinte (20) caracteres<br>*Obligatorio* | Es el valor pagado de cada factura involucrada en el pago, se utiliza el punto “.” como separador decimal con dos dígitos decimales |
-| FechaVencimiento | String<br>Formato: DD/MM/YYYY<br>*Opcional*                      | Fecha de vencimiento de cada factura involucrada en el pago. Si no usa fecha de vencimiento, se envía vacía|
-| Orden            | Integer<br>Tamaño máximo: dos (2) caracteres<br>*Opcional*       | Corresponde al orden de las facturas que serán objeto de pago|
+| IdFactura        | String(20) **Obligatorio** | Número único que identifica cada factura involucrada en el pago.|
+| ValorPagado      | Double(20) **Obligatorio** | Es el valor pagado de cada factura involucrada en el pago, se utiliza el punto “.” como separador decimal con dos dígitos decimales |
+| FechaVencimiento | String Formato: DD/MM/YYYY **Opcional** | Fecha de vencimiento de cada factura involucrada en el pago. Si no usa fecha de vencimiento, se envía vacía|
+| Orden            | Integer(2) **Opcional** | Corresponde al orden de las facturas que serán objeto de pago|
 
 ## Ejemplo Request
 
