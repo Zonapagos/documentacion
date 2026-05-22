@@ -109,8 +109,8 @@
     {
       "group": "Zonarecaudo - Tesorería y portal",
       "pages": [
-        "docs/zonarecaudo/consulta",
-        "docs/zonarecaudo/notificar-pagos"
+        "docs/zonarecaudo/tesoreria/consulta",
+        "docs/zonarecaudo/tesoreria/notificar-pagos"
       ]
     },
     {
