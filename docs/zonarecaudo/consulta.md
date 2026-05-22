@@ -1,0 +1,130 @@
+# Consulta de Cartera
+
+## Descripción
+
+El método permite consultar el estado de la cartera dependiendo de un número de factura o identificación del cliente.
+
+## Endpoint
+
+```http
+POST /ApiPagosN3/Consulta
+```
+
+## Formato Request
+
+```json
+Content-Type: application/json
+```
+
+## Características
+
+- Consulta por factura
+- Consulta por identificación
+- Retorna cartera pendiente
+- Retorna múltiples facturas
+
+---
+
+# Request
+
+## Parámetros
+
+| Nombre | Tipo | Obligatorio | Descripción |
+|---|---|---|---|
+| IdComercio | Integer | Sí | Identificador comercio |
+| Password | String(15) | Sí | Credencial |
+| IdFactura | String(15) | No | Número factura |
+| IdCliente | String(20) | No | Documento cliente |
+| ClaveConsulta | String(20) | No | Configuración |
+| ForzarParamConsulta | String(5) | No | Parámetro especial |
+
+## Ejemplo por Cliente
+
+```json
+{
+  "IdComercio": 2652,
+  "Password": "PagosN3",
+  "IdCliente": "A123456789",
+  "ClaveConsulta": "2701",
+  "ForzarParamConsulta": ""
+}
+```
+
+## Ejemplo por Factura
+
+```json
+{
+  "IdComercio": 2652,
+  "Password": "PagosN3",
+  "IdFactura": "123ABC",
+  "ClaveConsulta": "2702",
+  "ForzarParamConsulta": ""
+}
+```
+
+---
+
+# Response
+
+## Parámetros
+
+| Nombre | Tipo | Descripción |
+|---|---|---|
+| CodRespuesta | Integer | Código respuesta |
+| Descripcion | String | Resultado operación |
+| Facturas | Array | Facturas encontradas |
+| CodServicioPse | String | Código servicio |
+| CambiarClave | Integer | Cambio de clave |
+
+---
+
+## Arreglo Facturas
+
+| Campo | Tipo | Descripción |
+|---|---|---|
+| IdFactura | String | Identificador factura |
+| Concepto | String | Concepto factura |
+| TotalFactura | Double | Valor factura |
+| TotalIVA | Double | IVA |
+| Saldo | Double | Saldo |
+| FechaVencimiento | Date | Fecha vencimiento |
+| Orden | Integer | Orden visualización |
+| TipoIdCliente | String | Tipo documento |
+| IdCliente | String | Documento |
+| Nombre | String | Nombre cliente |
+| Apellido | String | Apellido |
+| Email | String | Correo |
+| Telefono | String | Teléfono |
+| CampoAdicional1 | String | Campo extra |
+| CampoAdicional2 | String | Campo extra |
+| CampoAdicional3 | String | Campo extra |
+
+---
+
+## Ejemplo Response
+
+```json
+{
+  "CodRespuesta": 0,
+  "Descripcion": "Consulta Exitosa",
+  "Facturas": [
+    {
+      "IdFactura": "123456789",
+      "Concepto": "Concepto1",
+      "TotalFactura": 9999.00,
+      "TotalIVA": 1899.81,
+      "Saldo": 11898.81,
+      "FechaVencimiento": "31/12/2017",
+      "Orden": 1,
+      "TipoIdCliente": 1,
+      "IdCliente": "123456789",
+      "Nombre": "Juan",
+      "Apellido": "Cano",
+      "Email": "juan@prueba.com.co",
+      "Telefono": "1234567890"
+    }
+  ],
+  "CodServicioPse": "2701",
+  "CambiarClave": 0
+}
+```
