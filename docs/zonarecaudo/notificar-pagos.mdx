@@ -1,0 +1,116 @@
+
+---
+title: "Notificar pagos"
+---
+
+El  método  cumplirá  la  función  de  registrar  los  pagos  dependiendo  del  número  de  facturas  involucradas  en  la transacción.
+
+## Endpoint
+
+```http
+POST http://dominio_comercio/ApiPagosN3/api/NotificarPagos 
+```
+
+| **Metodo** | **Formato |
+|------------|--------|
+| `POST` | `JSON` |
+
+<Note> IMPORTANTE: el comercio debe controlar el doble asentamiento, para ello el control lo realizan por el campo “IdPago” 
+que se detalla en el Request </Note>
+
+En caso de que se realicen varios llamados y este contiene el mismo “IdPago” se entiende que es el mismo pago y solo 
+deberá tener en cuanta uno para el asentamiento. Se deberá desarrollar con las siguientes características: 
+
+# Request
+
+| NOMBRE           | TIPO Y TAMAÑO                                                     | DESCRIPCIÓN|
+| ---------------- | ----------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| IdComercio       | Integer **Obligatorio** | Identificación del comercio en zonapagos, este valor es una constante y llega como parámetro de consulta en el método.|
+| Password         | String(15) **Obligatorio** | Corresponde a la contraseña de identificación entre zonapagos y comercio, este valor será de común acuerdo entre Zona Virtual y el comercio, con la finalidad que el comercio solo atiende la notificación si la contraseña enviada corresponde.|
+| IdCliente        | String(20) **Obligatorio** | ID o número de identificación del cliente, con este parámetro se buscan las facturas en la base de datos relacionadas al cliente con el fin de saber si existe y se encuentran en estado pendiente de pago.|
+| Facturas         | Array **Obligatorio** | Es un objeto tipo arreglo que contiene todas las facturas involucradas en el pago realizado. En el título siguiente que lleva por nombre “Arreglo facturas” se muestra la estructura del arreglo.|
+| EstadoPago       | Integer(5) **Obligatorio** | Se envía `1` si el pago se realizó OK, `0` (cero) si el pago no se pudo realizar.<br><br>En caso de que se notifiquen los pagos rechazados (Estado 1000) el Comercio debe estar en la capacidad de responder:<br><br>`0` Se realizó exitosamente la actualización del pago como lo indica el campo CodEstado<br><br>}`1001` Error entre ACH y el Banco. (Rechazada)<br><br>Esto con el fin de que la transacción no quede en la SONDA de zonapagos y de no bloquear al usuario si intenta realizar un nuevo pago.|
+| FormaPago        | Double(5) **Obligatorio** | Corresponde a la forma de pago utilizada:<br><br>• 32 Tarjeta de crédito<br>• 29 PSE<br>• 41 PDF generado en zonapagos<br>• 42 Gana<br>• 49 Nequi<br>• 48 Bancolombia<br>• 46 Daviplata<br>• 77 Mefía|
+| ValorTotalPagado | Integer **Obligatorio** | Total a pagar de la factura o grupo de facturas con IVA incluido, máximo dos decimales, usando “.” como separador.|
+| FechaPago        | String<br>Formato: dd/MM/AAAA HH:mm:ss<br>**Obligatorio**  | Fecha y hora en la que se realiza la transacción.|
+| IdPago           | Integer(20) **Obligatorio** | Identificador único de la transacción.|
+| TicketID         | Integer(20) **Obligatorio** | Se envía el identificador del pago ante el banco, (este valor es el que aparece en el informe emitido por ACH PSE para identificar el pago en el sistema de Tarjeta de Crédito.|
+| CUS              | String(20) **Opcional** | Aplica Solo Medio de Pago PSE. Retorna el código único de transacción CUS. En caso de que el pago se realizó con tarjeta de crédito se envía “0” cero o vacío.|
+| CodigoServicio   | String(10) **Opcional** | Aplica Solo Medio de Pago PSE. Retorna el código de Servicio, con el cual se inició la transacción. En caso de que el pago se realizó con tarjeta de crédito se envía “0” cero o vacío. En caso de ser multicrédito aquí se retorna el código de servicio principal padre.|
+| CicloTransaccion | Integer(2) **Opcional** | Aplica Solo Medio de Pago PSE. Retorna el ciclo de la transacción. En caso de que el pago se realizó con tarjeta de crédito se envía “0” cero|
+| CodigoBanco      | Integer(6) **Opcional** | Código único de identificación del banco.|
+| NombreBanco      | String(50) **Opcional** | Nombre del banco.|
+| Franquicia       | String(20) **Opcional** | Nombre de la franquicia.|
+| CodAprobacion    | String(30) **Opcional** | Código de aprobación de cuando el pago se realiza con tarjeta de crédito. En caso de que el pago se realizó con ACH PSE se envía “0” cero o vacío.|
+| Campo1           | String(70) **Opcional** | Retorna la información del campo opcional 1 que se envió cuando se inició la transacción.|
+| Campo2           | String(70) **Opcional** | Retorna la información del campo opcional 2 que se envió cuando se inició la transacción.|
+| Campo3           | String(70) **Opcional** | Retorna la información del campo opcional 3 que se envió cuando se inició la transacción.|
+| NumeroPago       | Integer(8) **Opcional** | Consecutivo asignado de manera interna en el sistema.|
+
+<Note> **Nota:** (EstadoPago) Es importante aclarar que el Comercio responde exitosamente la confirmación del pago, pero NO lo debe aplicar en su sistema dado que es un pago rechazado. </Note>
+
+## Arreglo facturas
+
+| NOMBRE           | TIPO Y TAMAÑO                                                    | DESCRIPCIÓN|
+| ---------------- | ---------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
+| IdFactura        | String<br>Tamaño máximo: veinte (20) caracteres<br>*Obligatorio* | Número único que identifica cada factura involucrada en el pago.|
+| ValorPagado      | Double<br>Tamaño máximo: veinte (20) caracteres<br>*Obligatorio* | Es el valor pagado de cada factura involucrada en el pago, se utiliza el punto “.” como separador decimal con dos dígitos decimales |
+| FechaVencimiento | String<br>Formato: DD/MM/YYYY<br>*Opcional*                      | Fecha de vencimiento de cada factura involucrada en el pago. Si no usa fecha de vencimiento, se envía vacía|
+| Orden            | Integer<br>Tamaño máximo: dos (2) caracteres<br>*Opcional*       | Corresponde al orden de las facturas que serán objeto de pago|
+
+## Ejemplo Request
+
+```json
+{ 
+ "IdComercio": 2652, 
+ "Password": "PagosN3", 
+ "IdCliente": "A123456789", 
+ "Facturas": [  
+  { 
+  "IdFactura": "123456789", 
+  "ValorPagado": 11898.81, 
+  "FechaVencimiento": "31/12/2017", 
+  "Orden": 1 
+  }, 
+  { 
+  "IdFactura": "123456790", 
+  "ValorPagado": 11898.81, 
+  "FechaVencimiento": "31/12/2017", 
+  "Orden": 2 
+  } 
+],
+"EstadoPago": 1, 
+ "FormaPago": 29, 
+ "ValorTotalPagado": 23797.62, 
+ "FechaPago": "13/10/2017 08:48:17", 
+ "IdPago": 2653, 
+ "TicketID": 20100180, 
+ "CUS": "1350706", 
+ "CodigoServicio": "2701", 
+ "CicloTransaccion": 1, 
+ "CodigoBanco": 7, 
+ "NombreBanco": "Bancolombia", 
+ "Franquicia": "Visa", 
+ "CodAprobacion": "1350706", 
+ "Campo1": "Carrera 50 # 50 sur 50", 
+ "Campo2": "", 
+ "Campo3": "", 
+ "NumeroPago": 180 
+} 
+```
+
+# Response
+
+| Nombre | Tipo | Descripción |
+|---|---|---|
+| CodEstado | Integer(2) **Obligatorio** | Se retorna los siguientes códigos, dependiendo del estado de la transacción realizada `0` Se realizó exitosamente la actualización del pago. `1` No se pudo realizar la actualización del pago. `2` Error en autenticación de seguridad. `99` Error técnico o inesperado en la operación. |
+| DescripcionEstado | String(100) **Obligatorio** | Se retorna el mensaje descriptivo, de acuerdo con el código `0` Se realizó exitosamente la actualización del pago. `1` No se pudo realizar la actualización del pago. `2` Error en autenticación de seguridad. `99` Error técnico o inesperado en la operación. |
+
+## Ejemplo Response
+
+```json
+{
+  "CodEstado": 0,
+  "DescripcionEstado": "Se realizó exitosamente la actualización del pago."
+}
+```
