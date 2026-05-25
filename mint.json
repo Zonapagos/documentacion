@@ -163,6 +163,12 @@
       ]
     },
     {
+          "group": "Soporte",
+          "pages": [
+            "docs/zonaexpress/soporte/preguntas-frecuentes"
+          ]
+        },
+    {
       "group": "Tokenización",
       "pages": [
         "docs/tokenizacion/introducción",
@@ -172,6 +178,12 @@
         "docs/tokenizacion/verificacion-transaccion"
       ]
     },
+    {
+          "group": "Soporte",
+          "pages": [
+            "docs/tokenizacion/soporte/preguntas-frecuentes"
+          ]
+        },
     {
   "group": "Link de cobro",
   "pages": [
