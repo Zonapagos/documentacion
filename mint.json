@@ -113,6 +113,7 @@
         {
           "group": "Tesorería",
           "pages": [
+            "docs/zonarecaudo/tesoreria/introducción",
             "docs/zonarecaudo/tesoreria/consulta",
             "docs/zonarecaudo/tesoreria/notificar-pagos"
           ]
