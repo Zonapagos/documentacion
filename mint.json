@@ -121,27 +121,27 @@
           "group": "Portal",
           "pages": [
             "docs/zonarecaudo/portal/introducción",
-            "portal/funcionalidades",
-            "portal/consulta-facturas",
-            "portal/bloqueo-liberacion",
-            "portal/asentamiento",
-            "portal/cargue-facturas",
-            "portal/personalizacion"
+            "docs/zonarecaudo/portal/funcionalidades",
+            "docs/zonarecaudo/portal/consulta-facturas",
+            "docs/zonarecaudo/portal/bloqueo-liberación",
+            "docs/zonarecaudo/portal/asentamiento",
+            "docs/zonarecaudo/portal/cargue-facturas",
+            "docs/zonarecaudo/portal/personalización"
           ]
         },
         {
       "group": "Administración",
       "pages": [
-        "administracion/editar-facturas",
-        "administracion/configuracion-portal"
+        "docs/zonarecaudo/administración/editar-facturas",
+        "docs/zonarecaudo/administración/configuración-portal"
       ]
     },
 
     {
       "group": "Usuario pagador",
       "pages": [
-        "usuario-pagador/guia-pago",
-        "usuario-pagador/estados-pago"
+        "docs/zonarecaudo/usuario-pagador/guia-pago",
+        "docs/zonarecaudo/usuario-pagador/estados-pago"
       ]
     },
         {
