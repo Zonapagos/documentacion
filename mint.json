@@ -143,6 +143,7 @@
     "docs/zonaexpress/casos-de-uso",
     "docs/zonaexpress/características",
     "docs/zonaexpress/medios-de-pago",
+    "docs/zonaexpress/ciclo-usuario-pagador"
     {
       "group": "Soporte",
       "pages": [
