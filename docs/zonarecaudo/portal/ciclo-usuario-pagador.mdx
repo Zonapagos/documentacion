@@ -1,1 +1,58 @@
-
+--- 
+title: Ciclo de pago usuario pagador 
+--- 
+ 
+# Ciclo de pago usuario pagador 
+ 
+Este flujo describe el recorrido del usuario desde la consulta hasta el pago. 
+ 
+<Steps> 
+ 
+<Step title="Consulta"> 
+ 
+El usuario busca su factura. 
+ 
+</Step> 
+ 
+<Step title="Selección"> 
+ 
+Visualiza obligaciones disponibles. 
+ 
+</Step> 
+ 
+<Step title="Validación"> 
+ 
+Confirma información. 
+ 
+</Step> 
+ 
+<Step title="Pago"> 
+ 
+Ejecuta el recaudo. 
+ 
+</Step> 
+ 
+<Step title="Actualización"> 
+ 
+La factura cambia de estado. 
+ 
+</Step> 
+ 
+</Steps> 
+ 
+--- 
+ 
+## Acciones permitidas al usuario 
+ 
+Dependiendo de la configuración: 
+ 
+- Modificar correo 
+- Modificar celular 
+- Realizar abonos 
+- Ajustar valor de pago 
+ 
+<Callout type="success"> 
+ 
+La actualización del estado ocurre automáticamente al finalizar el pago. 
+ 
+</Callout> 
