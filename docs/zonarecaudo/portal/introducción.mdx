@@ -1,51 +1,74 @@
----
-title: Portal de recaudo
----
-
-# Portal de recaudo
-
-El portal de recaudo permite centralizar el proceso de consulta y recepción de pagos.
-
-Las empresas pueden definir:
-
-- Campos visibles
-- Criterios de búsqueda
-- Reglas de recaudo
-- Comportamiento del pago
-- Flujo administrativo
-
----
-
-## Capacidades
-
-<CardGroup cols={2}>
-
-<Card title="Consulta">
-
-Búsqueda de facturas.
-
-</Card>
-
-<Card title="Administración">
-
-Control del ciclo de vida.
-
-</Card>
-
-<Card title="Carga">
-
-Importación masiva.
-
-</Card>
-
-<Card title="Control">
-
-Bloqueo y asentamiento.
-
-</Card>
-
-</CardGroup>
-
-<Callout type="info">
-El portal puede funcionar desacoplado o integrado con sistemas externos.
-</Callout>
+--- 
+title: Introducción 
+description: Recaudo mediante base de datos 
+--- 
+ 
+# Introducción 
+ 
+El modelo de recaudo por base de datos está diseñado para comercios que ya conocen previamente las obligaciones que deben recaudar y administran periódicamente las facturas que estarán 
+disponibles para pago. 
+ 
+Un ejemplo común es una empresa de arrendamientos que conoce cada mes cuáles son los clientes que deben realizar pagos. 
+ 
+En este esquema, el comercio administra previamente las facturas y Zonapagos publica la información para consulta y pago. 
+ 
+--- 
+ 
+## Consideraciones antes de crear el proyecto 
+ 
+Antes de iniciar la implementación del portal, el comercio debe definir las siguientes configuraciones. 
+ 
+<CardGroup cols={2}> 
+ 
+<Card title="Cantidad de registros"> 
+ 
+Definir el volumen inicial de facturas que serán cargadas. 
+ 
+Este límite podrá ampliarse posteriormente. 
+ 
+</Card> 
+ 
+<Card title="Frecuencia de cargue"> 
+ 
+Determinar si las facturas serán cargadas: 
+ 
+- Diario 
+- Semanal 
+- Mensual 
+ 
+</Card> 
+ 
+<Card title="Fechas de vencimiento"> 
+ 
+Definir cuántos vencimientos manejará cada factura. 
+ 
+</Card> 
+ 
+<Card title="Edición por usuario"> 
+ 
+Definir qué campos podrá modificar el usuario pagador. 
+ 
+</Card> 
+ 
+</CardGroup> 
+ 
+--- 
+ 
+## Configuraciones opcionales para el usuario pagador 
+ 
+El comercio podrá definir si el usuario podrá: 
+ 
+- Modificar correo electrónico 
+- Modificar número celular 
+- Ingresar valor de pago 
+- Realizar abonos parciales 
+ 
+--- 
+ 
+## Información requerida 
+ 
+<Callout type="info"> 
+ 
+Para habilitar el proyecto se debe entregar la macro o archivo plano con las facturas. 
+ 
+</Callout> 
