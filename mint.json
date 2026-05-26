@@ -154,25 +154,36 @@
       ]
     },
     {
-      "group": "Zonaexpress - Formulario de pago",
+  "group": "Zonaexpress - Formulario de pago",
+  "pages": [
+    "docs/zonaexpress/introducción",
+    "docs/zonaexpress/casos-de-uso",
+    "docs/zonaexpress/características",
+    "docs/zonaexpress/medios-de-pago",
+    {
+      "group": "Soporte",
       "pages": [
-        "docs/zonaexpress/introducción",
-        "docs/zonaexpress/casos-de-uso",
-        "docs/zonaexpress/características",
-        "docs/zonaexpress/medios-de-pago",
         "docs/zonaexpress/Preguntas-frecuentes"
       ]
-    },
+    }
+  ]
+},
+{
+  "group": "Tokenización",
+  "pages": [
+    "docs/tokenizacion/introducción",
+    "docs/tokenizacion/inicio-de-pago",
+    "docs/tokenizacion/notificar-token",
+    "docs/tokenizacion/recurrencia",
+    "docs/tokenizacion/verificacion-transaccion",
     {
-      "group": "Tokenización",
+      "group": "Soporte",
       "pages": [
-        "docs/tokenizacion/introducción",
-        "docs/tokenizacion/inicio-de-pago",
-        "docs/tokenizacion/notificar-token",
-        "docs/tokenizacion/recurrencia",
-        "docs/tokenizacion/verificacion-transaccion"
+        "docs/tokenizacion/preguntas-frecuentes"
       ]
-    },
+    }
+  ]
+},
     {
   "group": "Link de cobro",
   "pages": [
