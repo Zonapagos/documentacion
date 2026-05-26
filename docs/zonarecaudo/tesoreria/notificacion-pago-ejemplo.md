@@ -1,4 +1,7 @@
-# 8.2 Endpoint: Notificación de Pago
+---
+title: "Ejemplos de la integración "
+
+# Endpoint: Notificación de Pago
 
 ## URL
 
@@ -12,7 +15,7 @@ Registra la notificación de un pago exitoso realizado por un cliente.
 
 ---
 
-# 8.2.1 Código Fuente
+# Código Fuente
 
 ```csharp
 public class NotificarPagoController : ApiController
