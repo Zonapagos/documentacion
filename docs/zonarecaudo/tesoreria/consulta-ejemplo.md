@@ -1,6 +1,8 @@
-# 8. Ejemplos de la integración
+---
+title: "Ejemplos de la integración"
+---
 
-# 8.1 Endpoint: Consulta
+# Endpoint: Consulta
 
 ## URL
 
@@ -14,7 +16,7 @@ Permite consultar el estado de una transacción con base en una clave de consult
 
 ---
 
-# 8.1.1 Código Fuente
+# Código Fuente
 
 ```csharp
 public class ConsultaController : ApiController
