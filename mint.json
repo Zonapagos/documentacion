@@ -122,12 +122,10 @@
           "group": "Portal",
           "pages": [
             "docs/zonarecaudo/portal/introducción",
-            "docs/zonarecaudo/portal/funcionalidades",
-            "docs/zonarecaudo/portal/consulta-facturas",
-            "docs/zonarecaudo/portal/bloqueo-liberación",
-            "docs/zonarecaudo/portal/asentamiento",
             "docs/zonarecaudo/portal/cargue-facturas",
-            "docs/zonarecaudo/portal/personalización"
+            "docs/zonarecaudo/portal/creación-factura-manual",
+            "docs/zonarecaudo/portal/modificar-facturas",
+            "docs/zonarecaudo/portal/ciclo-usuario-pagador"
           ]
         },
         {
