@@ -131,21 +131,6 @@
           ]
         },
         {
-      "group": "Administración",
-      "pages": [
-        "docs/zonarecaudo/administración/editar-facturas",
-        "docs/zonarecaudo/administración/configuración-portal"
-      ]
-    },
-
-    {
-      "group": "Usuario pagador",
-      "pages": [
-        "docs/zonarecaudo/usuario-pagador/guia-pago",
-        "docs/zonarecaudo/usuario-pagador/estados-pago"
-      ]
-    },
-        {
           "group": "Soporte",
           "pages": [
             "docs/zonarecaudo/soporte/preguntas-frecuentes"
