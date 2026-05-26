@@ -1,5 +1,6 @@
 ---
 title: "Ejemplos de la integración "
+---
 
 # Endpoint: Notificación de Pago
 
