@@ -2,43 +2,82 @@
 title: Ciclo de pago usuario pagador 
 --- 
  
-# Ciclo de pago usuario pagador 
+# 1. Ciclo de pago usuario pagador 
  
 Este flujo describe el recorrido del usuario desde la consulta hasta el pago. 
  
-<Steps> 
- 
-<Step title="Consulta"> 
- 
-El usuario busca su factura. 
- 
-</Step> 
- 
-<Step title="Selección"> 
- 
-Visualiza obligaciones disponibles. 
- 
-</Step> 
- 
-<Step title="Validación"> 
- 
-Confirma información. 
- 
-</Step> 
- 
-<Step title="Pago"> 
- 
-Ejecuta el recaudo. 
- 
-</Step> 
- 
-<Step title="Actualización"> 
- 
-La factura cambia de estado. 
- 
-</Step> 
- 
-</Steps> 
+## Inicio pago
+
+Cuando el cliente abre el enlace es redireccionado al ciclo de pago. 
+<div style={{ textAlign: "center", margin: "24px 0" }}>
+<img 
+    src="/docs/imagenes/login_4.jpg"
+    style={{ 
+      width: "100%",
+      maxWidth: "500px",
+      borderRadius: "6px",
+      boxShadow: "0 10px 30px rgba(0,0,0,0.15), 0 2px 10px rgba(0,0,0,0.1)"
+    }}
+  />
+</div>
+
+## 2. Información cliente y detalle de la(s) factura(s) 
+<div style={{ textAlign: "center", margin: "24px 0" }}>
+<img 
+    src="/docs/imagenes/selección_de_facturas.jpg"
+    style={{ 
+      width: "100%",
+      maxWidth: "500px",
+      borderRadius: "6px",
+      boxShadow: "0 10px 30px rgba(0,0,0,0.15), 0 2px 10px rgba(0,0,0,0.1)"
+    }}
+  />
+</div>
+
+Cuando el usuario da clic en el botón “Pagar”, es redireccionado a la vista donde debe aceptar los términos y condiciones y seleccionar el medio de pago. 
+
+<div style={{ textAlign: "center", margin: "24px 0" }}>
+<img 
+    src="/docs/imagenes/medios_de_pago_zonarecaudo.jpg"
+    style={{ 
+      width: "100%",
+      maxWidth: "500px",
+      borderRadius: "6px",
+      boxShadow: "0 10px 30px rgba(0,0,0,0.15), 0 2px 10px rgba(0,0,0,0.1)"
+    }}
+  />
+</div>
+
+3. Cuando el usuario da clic en el botón “Pagar”, es redireccionado a la vista de PSE donde debe digitar el correo registrado en PSE para poder realizar el pago. 
+
+ <div style={{ textAlign: "center", margin: "24px 0" }}>
+<img 
+    src="/docs/imagenes/pago_pse.jpg"
+    style={{ 
+      width: "100%",
+      maxWidth: "500px",
+      borderRadius: "6px",
+      boxShadow: "0 10px 30px rgba(0,0,0,0.15), 0 2px 10px rgba(0,0,0,0.1)"
+    }}
+  />
+</div>
+
+## 4. Resultado Final 
+
+5. El sistema muestra el comprobante de pago 
+Estado transacción sea aprobado, rechazado o pendiente. 
+
+<div style={{ textAlign: "center", margin: "24px 0" }}>
+<img 
+    src="/docs/imagenes/comprobante_de_pago_aprobado.jpg"
+    style={{ 
+      width: "100%",
+      maxWidth: "500px",
+      borderRadius: "6px",
+      boxShadow: "0 10px 30px rgba(0,0,0,0.15), 0 2px 10px rgba(0,0,0,0.1)"
+    }}
+  />
+</div>
  
 --- 
  
