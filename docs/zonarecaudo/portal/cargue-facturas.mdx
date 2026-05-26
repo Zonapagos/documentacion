@@ -1,1 +1,69 @@
-
+--- 
+title: Cargue de facturas 
+--- 
+ 
+# Cargue de facturas 
+ 
+El cargue de facturas permite importar registros masivamente utilizando el archivo definido durante la implementación. 
+ 
+--- 
+ 
+## Importar facturas 
+ 
+<Steps> 
+ 
+<Step title="Ingresar al portal administrativo"> 
+ 
+Accede utilizando tus credenciales. 
+ 
+</Step> 
+ 
+<Step title="Seleccionar Importaciones - Exportaciones"> 
+ 
+Ingresar a la opción: 
+ 
+**Importación manual** 
+ 
+</Step> 
+ 
+<Step title="Seleccionar Importar"> 
+ 
+Iniciar el proceso. 
+ 
+</Step> 
+ 
+<Step title="Cargar archivo"> 
+ 
+Seleccionar la macro correspondiente. 
+ 
+</Step> 
+ 
+</Steps> 
+ 
+--- 
+ 
+## Configuraciones obligatorias 
+ 
+### Sobrescribir duplicados 
+ 
+Debe permanecer activado. 
+ 
+Permite: 
+ 
+- Evitar duplicidad de ID pago 
+- Evitar duplicidad de factura 
+- Mantener consistencia del recaudo 
+ 
+<Callout type="warning"> 
+ 
+Sobrescribir duplicados siempre debe estar habilitado. 
+ 
+</Callout> 
+ 
+--- 
+ 
+### Descartar registros anteriores 
+ 
+Archiva automáticamente todas las facturas del cargue anterior. 
+ 
+Esto permite mantener histórico sin eliminar registros. 
