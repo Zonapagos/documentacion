@@ -38,7 +38,7 @@ Seleccionar la macro correspondiente.
  
 </Steps> 
 
-### 1. Ingresar al portal administrativo
+1. Ingresar al portal administrativo
 
 Accede al portal administrativo con tus credenciales.
 
@@ -54,7 +54,7 @@ Accede al portal administrativo con tus credenciales.
   />
 </div>
 
-### 2. Seleccionar "Importaciones - Exportaciones"
+2. Seleccionar "Importaciones - Exportaciones"
 
 Dirígete a la sección de Importación manual
 
@@ -71,7 +71,7 @@ Dirígete a la sección de Importación manual
 </div>
 
 
-### 3. Seleccionar "Importar"
+3. Seleccionar "Importar"
 
 <div style={{ textAlign: "center", margin: "24px 0" }}>
 <img 
@@ -85,7 +85,7 @@ Dirígete a la sección de Importación manual
   />
 </div>
 
-### 4. Selecciono el archivo "La macro"
+4. Selecciono el archivo "La macro"
 
 <div style={{ textAlign: "center", margin: "24px 0" }}>
 <img 
@@ -99,9 +99,26 @@ Dirígete a la sección de Importación manual
   />
 </div>
 
-Siempre debo activar **“Sobre escribir duplicado”**
+Siempre debo activar **“Sobre escribir duplicado”** para evitar duplicidad de la factura. 
 
-Activar la opción descartar registros anteriores si se quiere archiva todas las facturas del cargue anterior
+## Configuraciones obligatorias 
+### Sobrescribir duplicados 
+ 
+Debe permanecer activado. 
+ 
+Permite: 
+ 
+- Evitar duplicidad de ID pago 
+- Evitar duplicidad de factura 
+- Mantener consistencia del recaudo 
+ 
+<warning> Sobrescribir duplicados siempre debe estar habilitado. </Warning> 
+
+### Descartar registros anteriores 
+ 
+Archiva automáticamente todas las facturas del cargue anterior. 
+ 
+Esto permite mantener histórico sin eliminar registros. 
 
 <div style={{ textAlign: "center", margin: "24px 0" }}>
 <img 
@@ -115,7 +132,7 @@ Activar la opción descartar registros anteriores si se quiere archiva todas las
   />
 </div>
 
-Una vez cargada la macro puedes consultar que si se ha cargado en la opción “Log importaciones”
+Una vez cargada la macro puedes consultar que si se ha cargado en la opción **“Log importaciones”**
 
 <div style={{ textAlign: "center", margin: "24px 0" }}>
 <img 
@@ -154,31 +171,3 @@ Dar clic en detalle para ver el motivo de las rechazadas.
     }}
   />
 </div>
-
---- 
- 
-## Configuraciones obligatorias 
- 
-### Sobrescribir duplicados 
- 
-Debe permanecer activado. 
- 
-Permite: 
- 
-- Evitar duplicidad de ID pago 
-- Evitar duplicidad de factura 
-- Mantener consistencia del recaudo 
- 
-<Callout type="warning"> 
- 
-Sobrescribir duplicados siempre debe estar habilitado. 
- 
-</Callout> 
- 
---- 
- 
-### Descartar registros anteriores 
- 
-Archiva automáticamente todas las facturas del cargue anterior. 
- 
-Esto permite mantener histórico sin eliminar registros. 
