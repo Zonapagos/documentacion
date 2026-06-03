@@ -107,11 +107,11 @@
       ]
     },
     {
-      "group": "Zonarecaudo - Tesorería y portal",
+      "group": "Zonarecaudo - Tesorería y Base de Datos",
       "pages": [
         "docs/zonarecaudo/introducción",
         {
-          "group": "Tesorería",
+          "group": "Zonarecaudo - Tesorería",
           "pages": [
             "docs/zonarecaudo/tesoreria/introducción",
             "docs/zonarecaudo/tesoreria/consulta",
@@ -121,7 +121,7 @@
           ]
         },
         {
-          "group": "Portal",
+          "group": "Zonarecaudo - Base de Datos",
           "pages": [
             "docs/zonarecaudo/portal/introducción",
             "docs/zonarecaudo/portal/cargue-facturas",
