@@ -151,6 +151,33 @@ Los campos clave que debes persistir:
 Estos datos te los entregan bancos y franquicias en los archivos de liquidación diaria.
 </Accordion>
 
+<Accordion title="¿Cuánto tiempo tarda en reflejarse el estado de una transacción en los diferentes medios de pago?">
+El tiempo de procesamiento depende del medio de pago utilizado. Por ejemplo, para ACH el tiempo habitual oscila entre 5 y 
+15 minutos, aunque en casos particulares puede acercarse a los 30 minutos.
+</Accordion>
+
+<Accordion title="¿Cada cuánto tiempo se recomienda ejecutar la sonda de consulta de estados?">
+Como referencia, se recomienda configurar la ejecución de la sonda entre 5 y 7 minutos o entre 10 y 12 minutos. Sin embargo,
+cada comercio puede definir el intervalo que mejor se adapte a su operación, procurando evitar ciclos demasiado cortos que 
+generen un consumo excesivo del servicio.
+</Accordion>
+
+<Accordion title="¿Es posible salir a producción sin implementar la ruta GET?">
+La ruta GET es un requisito obligatorio para las integraciones. No obstante, el comercio puede solicitar formalmente por correo 
+electrónico la autorización para salir a producción utilizando únicamente la sonda de consulta.
+</Accordion>
+
+<Accordion title="¿Qué condiciones aplican si se solicita salir a producción sin la ruta GET?">
+En caso de aprobarse la solicitud, el comercio deberá informar a sus usuarios que, después de realizar un intento de pago, 
+deben esperar un tiempo prudente antes de consultar el estado de la transacción o intentar un nuevo pago. Asimismo, el comercio será 
+responsable de consultar el estado de cada transacción mediante la sonda, ya que no contará con notificaciones automáticas por parte de Zona Pagos.
+</Accordion>
+
+<Accordion title="¿Cómo se aprueba una solicitud para operar sin la ruta GET?">
+La solicitud debe enviarse formalmente por correo electrónico. Una vez recibida, será escalada para su evaluación y la respuesta de 
+aprobación o rechazo se comunicará por el mismo medio.
+</Accordion>
+
 </AccordionGroup>
 
 ## ¿No encuentras tu pregunta?
