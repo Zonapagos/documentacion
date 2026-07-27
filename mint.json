@@ -207,6 +207,15 @@
       ]
     }
   ]
+},
+{
+  "group": "Plugins",
+  "pages": [
+    "docs/plugins/wordpress",
+    "docs/plugins/woocommerce",
+    "docs/plugins/prestashop",
+    "docs/plugins/magento"
+  ]
 }
 ]
 }
