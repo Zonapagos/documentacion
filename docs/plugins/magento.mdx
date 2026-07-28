@@ -96,7 +96,7 @@ a la pasarela de pagos de zonapagos, selecciona el medio de pago e ingresa sus d
 <Icon icon="phone" /> Zonapagos procesa la transacción
 el usuario es redirigido de nuevo a la tienda con la confirmación del pago.
 
-<Icon icon="chart-area" /> El estado del pedido se actualiza
+<Icon icon="circle-info" /> El estado del pedido se actualiza
 automáticamente en Magento según el resultado (aprobado, rechazado o pendiente)  y en el modulo administrativo Zonapagos.
 
 ## ¿Tienes dudas con la instalación o configuración?
@@ -107,9 +107,22 @@ Nuestro equipo de soporte está disponible para ayudarte en cada paso de la inte
 <Check> Soporte especializado </Check>
 <Check> Acompañamiento continuo </Check>
 
-<Card
-  title="Contactenos"
-  icon="clipboard-list"
+<a
   href="https://odoo.zonavirtual.com/contactus"
+  style={{
+    display: "inline-flex",
+    alignItems: "center",
+    gap: "10px",
+    padding: "14px 24px",
+    borderRadius: "999px",
+    textDecoration: "none",
+    fontWeight: "600",
+    border: "2px solid #15a48d",
+    color: "#15a48d",
+    transition: "0.2s ease"
+  }}
 >
-</Card>
+  <Icon icon="clipboard-list" />
+  <span>Contáctenos</span>
+  <Icon icon="arrow-right" />
+</a>
