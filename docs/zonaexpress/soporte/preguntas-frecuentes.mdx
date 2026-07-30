@@ -1,1 +1,106 @@
+---
+title: "Preguntas frecuentes"
+---
+Dudas comunes al integrar con Zonapagos
 
+## Preguntas frecuentes
+
+<AccordionGroup>
+  <Accordion title="¿Qué es Zonaexpress - Formularios de Pago?">
+    Es una solución que permite a los comercios recibir pagos en línea mediante un formulario seguro, sin necesidad de desarrollar una pasarela de pagos desde cero.
+  </Accordion>
+
+  <Accordion title="¿Necesito conocimientos técnicos para usar el formulario de pago?">
+    No necesariamente. Si utilizarás el formulario estándar, solo debes configurarlo con los datos suministrados por Zonapagos. Si deseas una integración personalizada, sí será necesario apoyo técnico.
+  </Accordion>
+
+  <Accordion title="¿Qué medios de pago acepta el formulario?">
+    El formulario puede aceptar diferentes medios de pago habilitados para el comercio, como:
+
+    - Tarjetas de crédito.
+    - Tarjetas débito.
+    - PSE.
+    - Billeteras digitales (si están habilitadas).
+    - Otros medios disponibles según la configuración del comercio.
+  </Accordion>
+
+  <Accordion title="¿Cómo obtengo las credenciales para integrar el formulario?">
+    Las credenciales son suministradas por Zonapagos una vez el comercio complete el proceso de vinculación y configuración.
+  </Accordion>
+
+  <Accordion title="¿Puedo personalizar el formulario de pago?">
+    Sí. Dependiendo de la configuración, es posible personalizar algunos elementos como el logo, colores o información del comercio.
+  </Accordion>
+
+  <Accordion title="¿El formulario funciona en dispositivos móviles?">
+    Sí. El formulario es responsive y puede utilizarse desde computadores, tablets y teléfonos móviles.
+  </Accordion>
+
+  <Accordion title="¿Cómo sé si una transacción fue aprobada o rechazada?">
+    El resultado se muestra al finalizar el proceso de pago y también puede consultarse mediante la URL de respuesta, URL de confirmación o los servicios de consulta disponibles.
+  </Accordion>
+
+  <Accordion title="¿Qué sucede si el cliente cierra la página antes de finalizar el pago?">
+    La transacción puede quedar pendiente o no completarse. Se recomienda consultar el estado de la transacción antes de asumir que el pago fue exitoso o fallido.
+  </Accordion>
+
+  <Accordion title="¿Cómo puedo consultar el estado de una transacción?">
+    Puedes hacerlo mediante los servicios de consulta disponibles o desde el portal administrativo de Zonapagos, si cuentas con acceso.
+  </Accordion>
+
+  <Accordion title="¿Es seguro realizar pagos mediante el formulario?">
+    Sí. Las transacciones se procesan bajo estándares de seguridad que protegen la información del comprador y del comercio.
+  </Accordion>
+
+  <Accordion title="¿Puedo utilizar el mismo formulario para varios productos o servicios?">
+    Sí. Solo debes enviar la información correspondiente al producto, servicio o factura en cada solicitud.
+  </Accordion>
+
+  <Accordion title="¿Cómo puedo realizar pruebas antes de salir a producción?">
+    Debes utilizar el ambiente de pruebas (Sandbox) y las credenciales de prueba suministradas por Zonapagos.
+  </Accordion>
+
+  <Accordion title="¿Qué diferencia hay entre el ambiente de pruebas y producción?">
+    **Pruebas:** permite validar la integración sin procesar pagos reales.
+
+    **Producción:** procesa transacciones reales con los medios de pago habilitados.
+  </Accordion>
+
+  <Accordion title="¿Qué debo hacer si recibo un error durante la integración?">
+    Verifica:
+
+    - Que las credenciales sean correctas.
+    - Que los parámetros enviados sean válidos.
+    - Que la firma o hash (si aplica) sea correcta.
+    - Que estés utilizando el ambiente correspondiente (pruebas o producción).
+  </Accordion>
+
+  <Accordion title="¿Puedo integrar el formulario con mi sitio web?">
+    Sí. El formulario puede integrarse desde cualquier sitio web o aplicación que pueda enviar los parámetros requeridos.
+  </Accordion>
+
+  <Accordion title="¿Cómo recibo la confirmación de un pago exitoso?">
+    Mediante la **URL de Confirmación (Webhook)** configurada para el comercio y/o la **URL de Respuesta**, según el flujo de integración implementado.
+  </Accordion>
+
+  <Accordion title="¿Qué debo hacer si una transacción aparece como pendiente?">
+    Es recomendable esperar la respuesta definitiva del medio de pago o consultar nuevamente el estado de la transacción antes de tomar alguna acción.
+  </Accordion>
+
+  <Accordion title="¿Qué navegadores son compatibles?">
+    Zonaexpress es compatible con los principales navegadores modernos como:
+
+    - Google Chrome
+    - Microsoft Edge
+    - Mozilla Firefox
+    - Safari
+  </Accordion>
+
+  <Accordion title="¿Qué hago si el cliente reporta un cobro duplicado?">
+    Debe verificarse el estado de las transacciones y la referencia enviada. En caso de ser necesario, contactar al equipo de soporte de Zonapagos.
+  </Accordion>
+
+  <Accordion title="¿Cómo puedo contactar al equipo de soporte?">
+    Puedes comunicarte a través de los canales oficiales de soporte definidos por Zonapagos, proporcionando el identificador o referencia de la transacción para agilizar la atención.
+  </Accordion>
+</AccordionGroup>
