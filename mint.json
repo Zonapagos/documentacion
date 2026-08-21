@@ -212,7 +212,7 @@
   "pages": [
     "docs/plugins/wordpress",
     "docs/plugins/woocomerce",
-    "docs/plugins/prestashop",
+    <!-- "docs/plugins/prestashop",-->
     "docs/plugins/magento"
   ]
 }
