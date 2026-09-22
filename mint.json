@@ -210,7 +210,7 @@
 {
   "group": "Plugins",
   "pages": [
-    "docs/plugins/introducción",
+    "docs/plugins/introduccion",
     "docs/plugins/wordpress",
     "docs/plugins/woocomerce",
     "docs/plugins/prestashop",
